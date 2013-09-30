@@ -129,4 +129,33 @@ html, body {
   width: 70%;
 }
 
+.gallery {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.gallery-picture {
+  display: inline;
+  border-radius: 15px;
+  max-width: 80%;
+}
+
+.gallery-picture-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  width: 60%;
+}
+
+.gallery-picture-caption {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 80%;
+}
+
  
