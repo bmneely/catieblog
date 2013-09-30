@@ -1,0 +1,56 @@
+.nav {
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0px;
+  background-color: #778899;
+  font-size: 1.3em;
+}
+
+.nav li
+{
+  display: inline;
+  margin-left: 0px;
+  padding-left: 50px;
+  padding-right: 50px
+}
+.nav a:link {
+  color:black;
+  text-decoration: none;
+}
+
+.nav a:visited, a:hover {
+  text-decoration: none;
+  color:black;
+}
+
+li.active {
+  background-color: white;
+}
+
+#logo{
+  margin-left: 30px;
+  margin-top: 40px;
+  display:inline;
+  float:left;
+}
+
+.banner {
+  background-image: url("../../assets/images/banner.jpg");
+  margin-left: 250px;
+  height: 250px;
+  background-color: white;
+  overflow:auto;
+  overflow-x:hidden;
+}
+
+#blog-name {
+  float:left;
+  margin-top:0px;
+  padding-right:25px;
+  padding-left: 25px;
+  padding-top:180px;
+  font-style: bold;
+  color: black;
+}
