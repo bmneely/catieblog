@@ -11,11 +11,10 @@
     <div id='body'>
       <div class="gallery">
       
-        <?php $image_location = "posts/1-27-13/photos/quill-01.jpg"; $image_caption = "Dolls and tea"; include("partials/gallery_picture.php") ?>
         <?php $image_location = "posts/1-27-13/photos/quill-01.jpg"; $image_caption = "Dolls and Tea"; include("partials/gallery_picture.php") ?>
         <?php $image_location = "posts/1-28-13/photos/washi-01.jpg"; $image_caption = "Washi tape"; include("partials/gallery_picture.php") ?>
-        <?php $image_location = "posts/1-28-13/photos/washi-02.jpg"; $image_caption = "Washi tape"; include("partials/gallery_picture.php") ?>
-        <?php $image_location = "posts/1-28-13/photos/washi-03.jpg"; $image_caption = "More washi tape"; include("partials/gallery_picture.php") ?>
+        <?php $image_location = "posts/1-28-13/photos/washi-02.jpg"; $image_caption = "More washi tape"; include("partials/gallery_picture.php") ?>
+        <?php $image_location = "posts/1-28-13/photos/washi-03.jpg"; $image_caption = "Even more washi tape"; include("partials/gallery_picture.php") ?>
         <?php $image_location = "posts/1-28-13/photos/washi-04.jpg"; $image_caption = "So much washi tape"; include("partials/gallery_picture.php") ?>
         <?php $image_location = "posts/1-29-13/photos/snowy-01.jpg"; $image_caption = "The view from our bedroom"; include("partials/gallery_picture.php") ?>
         <?php $image_location = "posts/1-29-13/photos/snowy-02.jpg"; $image_caption = "Mac and cheese"; include("partials/gallery_picture.php") ?>
@@ -34,8 +33,7 @@
         <?php $image_location = "posts/9-22-13/photos/9.22.13-09.jpg"; $image_caption = "All together"; include("partials/gallery_picture.php") ?>
       </div>
     </div>
-
-
+    
     <?php include("partials/footer.php") ?>
   </div>
 </html>

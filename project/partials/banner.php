@@ -1,6 +1,6 @@
 <div id="header">
   <div>
-    <a href="index.php"><img id="logo" src="assets/images/logo.jpg" alt="cricket and bea"></a>
+    <a href="/project/index.php"><img id="logo" src="/project/assets/images/logo.jpg" alt="cricket and bea"></a>
     <div class="banner"></div>
   </div>
 

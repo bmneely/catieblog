@@ -4,7 +4,5 @@
   <link href="/project/assets/stylesheets/banner-nav.css" rel="stylesheet" type="text/css">
   <link href="/project/assets/stylesheets/content.css" rel="stylesheet" type="text/css">
   <link href="/project/assets/stylesheets/footer.css" rel="stylesheet" type="text/css">
-  <link rel="icon" 
-      type="image/gif" 
-      href="/project/assets/images/favicon.gif" />
+  <link rel="icon" type="image/gif" href="/project/assets/images/favicon.gif" />
 </head>
