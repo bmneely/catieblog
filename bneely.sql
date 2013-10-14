@@ -13,7 +13,7 @@ CREATE TABLE item (
   description   VARCHAR(512) NOT NULL,
   price_dollars INTEGER(4) NOT NULL DEFAULT 0,
   price_cents   INTEGER(2) NOT NULL DEFAULT 0,
-  sold          BOOL NOT NULL DEFAULT 0,
+  status        INTEGER(1) DEFAULT 0,
   user_id       INTEGER(16)
 );
 
@@ -35,5 +35,5 @@ CREATE TABLE comment (
 
 CREATE TABLE post_comment (
   post_id       INTEGER(16) NOT NULL,
-  comment_id    INTEGER()
+  comment_id    INTEGER(16)
 );
