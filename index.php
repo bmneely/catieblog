@@ -11,13 +11,13 @@
   $sendgrid = new SendGrid('app18416203@heroku.com', 'oiff33gs');
 
 
-  $mail = new SendGrid\Mail();
-  $mail->
-    addTo('bmneely@gmail.com')->
-    setFrom('me@bar.com')->
-    setSubject('Subject goes here')->
-    setText('Hello World!')->
-    setHtml('<strong>Hello World!</strong>');
+  // $mail = new SendGrid\Mail();
+  // $mail->
+  //   addTo('bmneely@gmail.com')->
+  //   setFrom('me@bar.com')->
+  //   setSubject('Subject goes here')->
+  //   setText('Hello World!')->
+  //   setHtml('<strong>Hello World!</strong>');
 
   // $sendgrid->
   // web->
