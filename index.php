@@ -14,7 +14,7 @@
   $sendgrid = new SendGrid("app18416203@heroku.com", "oiff33gs");
 
 
-  $mail = new SendGrid::Email();
+  $mail = new SendGrid\Email();
   $mail->
     addTo('bmneely@gmail.com')->
     setFrom('me@bar.com')->
