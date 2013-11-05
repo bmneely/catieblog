@@ -1,4 +1,12 @@
 <?php $page = "blog" ?>
+
+<?php
+  // index.php
+  // This page has a comment form for posting, and a list of comments from MySQL
+  require_once "resources/Dao.php";
+  $dao = new Dao();
+?>
+
 <!DOCTYPE html>
 <html>
   <?php include("partials/head.php") ?>
@@ -95,6 +103,21 @@
       </div>
       <div class="clear"></div>
     </div>
+
+
+    <?php
+    $users = $dao->getUsers();
+    echo "<table>";
+    foreach ($users as $user) {
+      echo "<tr>";
+      echo "<td>" . $user["first_name"] . "</td>";
+      echo "<td>" . $user["last_name"] . "</td>";
+      echo "</tr>";
+    }
+    echo "</table>";
+    ?>
+
+
 
     <?php include("partials/footer.php") ?>
   </div>
