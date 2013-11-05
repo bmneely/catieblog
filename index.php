@@ -6,13 +6,15 @@
   require_once "/resources/unirest-php/lib/Unirest.php";
   require_once "resources/sendgrid-php/lib/SendGrid.php";
 
+  SendGrid::register_autoloader();
+
 
   $dao = new Dao();
 
   $sendgrid = new SendGrid("app18416203@heroku.com", "oiff33gs");
 
 
-  $mail = new SendGrid\Mail();
+  $mail = new SendGrid\Email();
   // $mail->
   //   addTo('bmneely@gmail.com')->
   //   setFrom('me@bar.com')->
