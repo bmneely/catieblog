@@ -19,9 +19,9 @@
     setText('Hello World!')->
     setHtml('<strong>Hello World!</strong>');
 
-  $sendgrid->
-  web->
-    send($mail);
+  // $sendgrid->
+  // web->
+  //   send($mail);
 
 ?>
 
