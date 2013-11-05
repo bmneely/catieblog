@@ -5,6 +5,7 @@
   require_once "/resources/unirest-php/lib/Unirest.php";
   require_once "/resources/sendgrid-php/lib/SendGrid.php";
 
+  SendGrid::register_autoloader();
 
   $dao = new Dao();
 
