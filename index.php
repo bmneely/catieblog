@@ -4,11 +4,13 @@
   // index.php
   // This page has a comment form for posting, and a list of comments from MySQL
   require_once "resources/Dao.php";
-  include 'resources/sendgrid-php/lib/SendGrid.php';
+  require_once '/resources/unirest-php/lib/Unirest.php';
+  require_once '/resources/sendgrid-php/lib/SendGrid.php';
+
 
   $dao = new Dao();
 
-  // $sendgrid = new SendGrid('app18416203@heroku.com', 'oiff33gs');
+  $sendgrid = new SendGrid('app18416203@heroku.com', 'oiff33gs');
 
 
   // $mail = new SendGrid\Mail();
