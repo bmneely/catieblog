@@ -3,11 +3,10 @@
 <?php
   require_once "resources/Dao.php";
 
-  require 'vendor/autoload.php';
-  SendGrid::register_autoloader();
   require_once "/resources/unirest-php/lib/Unirest.php";
   require_once "resources/sendgrid-php/lib/SendGrid.php";
 
+  SendGrid::register_autoloader();
 
   $dao = new Dao();
 
