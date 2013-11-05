@@ -9,7 +9,7 @@
 
   $dao = new Dao();
 
-  // $sendgrid = new SendGrid("app18416203@heroku.com", "oiff33gs");
+  $sendgrid = new SendGrid("app18416203@heroku.com", "oiff33gs");
 
 
   // $mail = new SendGrid\Mail();
