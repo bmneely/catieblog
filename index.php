@@ -8,7 +8,7 @@
 
   $dao = new Dao();
 
-  $sendgrid = new SendGrid("app18416203@heroku.com", "oiff33gs");
+  $sendgrid = new SendGrid('username', 'password');
 
 
   // $mail = new SendGrid\Mail();
