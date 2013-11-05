@@ -2,29 +2,19 @@
 
 <?php
   require_once "resources/Dao.php";
-
-  require_once "/resources/unirest-php/lib/Unirest.php";
-  require_once "resources/sendgrid-php/lib/SendGrid.php";
-
-  SendGrid::register_autoloader();
-
-
   $dao = new Dao();
 
-  $sendgrid = new SendGrid("app18416203@heroku.com", "oiff33gs");
+  require 'vendor/autoload.php';
+  use Mailgun\Mailgun;
 
+  $mg = new Mailgun("key-0qc796hgz3c1ke5wt4rw58ysavrbk0o9");
+  $domain = "cricketandbea.com";
 
-  $mail = new SendGrid\Email();
-  $mail->
-    addTo('bmneely@gmail.com')->
-    setFrom('me@bar.com')->
-    setSubject('Subject goes here')->
-    setText('Hello World!')->
-    setHtml('<strong>Hello World!</strong>');
+$mg->sendMessage($domain, array('from'    => 'bob@example.com', 
+                                'to'      => 'bmneely@gmail.com', 
+                                'subject' => 'The PHP SDK is awesome!', 
+                                'text'    => 'It is so simple to send a message.'));
 
-  // $sendgrid->
-  // web->
-  //   send($mail);
 
 ?>
 
