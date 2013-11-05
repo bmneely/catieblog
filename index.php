@@ -15,12 +15,12 @@
 
 
   $mail = new SendGrid\Email();
-  // $mail->
-  //   addTo('bmneely@gmail.com')->
-  //   setFrom('me@bar.com')->
-  //   setSubject('Subject goes here')->
-  //   setText('Hello World!')->
-  //   setHtml('<strong>Hello World!</strong>');
+  $mail->
+    addTo('bmneely@gmail.com')->
+    setFrom('me@bar.com')->
+    setSubject('Subject goes here')->
+    setText('Hello World!')->
+    setHtml('<strong>Hello World!</strong>');
 
   // $sendgrid->
   // web->
