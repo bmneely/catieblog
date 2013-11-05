@@ -10,10 +10,10 @@
   $mg = new Mailgun("key-0qc796hgz3c1ke5wt4rw58ysavrbk0o9");
   $domain = "cricketandbea.com";
 
-$mg->sendMessage($domain, array('from'    => 'bob@example.com', 
-                                'to'      => 'bmneely@gmail.com', 
-                                'subject' => 'The PHP SDK is awesome!', 
-                                'text'    => 'It is so simple to send a message.'));
+$mg->sendMessage($domain, array('from'    => 'ben@example.com', 
+                                'to'      => 'thegreen101331@gmail.com', 
+                                'subject' => "Fuck Sendgrid, it's a bitch, MailGun rules!", 
+                                'text'    => 'I appologize for the 160 messages you are going to get before I turn this off, but it was so worth it.'));
 
 
 ?>
