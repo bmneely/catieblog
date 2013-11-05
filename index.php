@@ -2,14 +2,13 @@
 
 <?php
   require_once "resources/Dao.php";
-  require_once "/resources/unirest-php/lib/Unirest.php";
+  // require_once "/resources/unirest-php/lib/Unirest.php";
   require_once "/resources/sendgrid-php/lib/SendGrid.php";
 
-  SendGrid::register_autoloader();
 
   $dao = new Dao();
 
-  $sendgrid = new SendGrid('username', 'password');
+  // $sendgrid = new SendGrid("app18416203@heroku.com", "oiff33gs");
 
 
   // $mail = new SendGrid\Mail();
