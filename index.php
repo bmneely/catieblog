@@ -5,6 +5,23 @@
   // This page has a comment form for posting, and a list of comments from MySQL
   require_once "resources/Dao.php";
   $dao = new Dao();
+
+  include 'resources/sendgrid-php/lib/SendGrid.php';
+  $sendgrid = new SendGrid('app18416203@heroku.com', 'oiff33gs');
+
+
+  $mail = new SendGrid\Mail();
+  $mail->
+    addTo('bmneely@gmail.com')->
+    setFrom('me@bar.com')->
+    setSubject('Subject goes here')->
+    setText('Hello World!')->
+    setHtml('<strong>Hello World!</strong>');
+
+  $sendgrid->
+  web->
+    send($mail);
+
 ?>
 
 <!DOCTYPE html>
