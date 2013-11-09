@@ -60,6 +60,7 @@ li.active {
 }
 
 .sign-in {
+  display: none;
   float: right;
   display:inline;
   position: relative;
