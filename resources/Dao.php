@@ -23,7 +23,11 @@ class Dao {
 
   public function getUser ($email) {
     $conn = $this->getConnection();
-    return $conn->query("SELECT * FROM user WHERE email = " . $email);
+    $getQuery = "SELECT * FROM user WHERE email = :email";
+    $q = $conn->prepare($getQuery);
+    $q->bindParam(":email", $email);
+    $q->execute();
+    return reset($q->fetchAll());
   }
 
   public function saveUser ($user) {
