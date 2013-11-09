@@ -15,7 +15,7 @@
   </div>
   <div class="sign-in">
     <div>
-      <a href="" onclick="toggleSignIn()">&#10006;</a>
+      <a class="close-icon" href="" onclick="toggleSignIn()">&#10006;</a>
       <br>
       Username:
       <br>
