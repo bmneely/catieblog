@@ -60,9 +60,10 @@ li.active {
 }
 
 .sign-in {
-  float: right;
-  display: none;
   position: absolute;
+  margin: -15px 15px;
+  right: 0;
+  display: none;
   width: 25%;
   border: dotted 1px #778899;
   border-radius: 7px;
@@ -72,4 +73,5 @@ li.active {
 .close-icon {
   float: right;
   text-decoration: none;
+  padding: 1px 4px;
 }
