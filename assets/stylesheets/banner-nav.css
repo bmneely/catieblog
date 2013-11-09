@@ -60,9 +60,10 @@ li.active {
 }
 
 .sign-in {
+  float: right;
+  display:inline;
   position: fixed;
-  padding-top: 275;
+  padding-top: 10;
   width: 25%;
   height: 250px;
-  float: right;
 }
