@@ -12,6 +12,7 @@ html, body {
 
 #header {
   padding:10px;
+  display: inline;
 }
 
 #body {
