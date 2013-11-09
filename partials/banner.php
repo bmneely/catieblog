@@ -10,7 +10,12 @@
       <li class="<?php print $page === 'about' ? 'active' : 'inactive' ?>"><a href="/about.php">About</a></li>
       <li class="<?php print $page === 'gallery' ? 'active' : 'inactive' ?>"><a href="/gallery.php">Gallery</a></li>
       <li class="<?php print $page === 'store' ? 'active' : 'inactive' ?>"><a href="/store.php">Store</a></li>
-      <li class="float-right"><i class="fa fa-sign-in"></i> Sign In</li>
+      <li class="float-right"><i class="fa fa-sign-in"></i> Log In</li>
     </ul>
   </div>
 </div>
+
+<script type="text/javascript">
+alert("hlelo");
+$("float-right").append("ljalsdjfljlfdsajlfsdajdflasdsafljjlafsdljafsjladfsjlkafsd");
+</script>
