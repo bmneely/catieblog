@@ -20,7 +20,8 @@ ul {
   text-decoration: none;
 }
 
-.nav .float-right {
+.float-right {
+  margin-right: 150px;
   float: right;
 }
 
