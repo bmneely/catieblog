@@ -15,7 +15,8 @@
   </div>
   <div class="sign-in">
     <div>
-      &#10006;
+      <a href="" onclick="toggleSignIn()">&#10006;</a>
+      <br>
       Username:
       <br>
       password:
