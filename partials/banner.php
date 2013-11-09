@@ -13,6 +13,12 @@
       <li class="float-right"><a href="#" onclick="myFunction()"><i class="fa fa-sign-in"></i> Log In</a></li>
     </ul>
   </div>
+  <div class="sign-in">
+    Username:
+    <br>
+    password:
+  </div>
+  <div class="clear"></div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
