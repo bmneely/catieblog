@@ -1,6 +1,7 @@
 <?php
-// Dao.php
-// class for saving and getting comments from MySQL
+
+require_once "User.php";
+
 class Dao {
 
   private $host = "us-cdbr-east-04.cleardb.com";
@@ -20,9 +21,14 @@ class Dao {
     return $conn->query("SELECT * FROM user");
   }
 
+  public function getUser ($email) {
+    $conn = $this->getConnection();
+    return $conn->query("SELECT * FROM user WHERE email = " . $email);
+  }
+
   public function saveUser ($user) {
     $conn = $this->getConnection();
-
+    // FINISH
   }
 
 

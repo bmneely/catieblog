@@ -117,14 +117,12 @@
 
 
     <?php
-    $users = $dao->getUsers();
+    $user = $dao->getUser("bmneely@gmail.com");
     echo "<table>";
-    foreach ($users as $user) {
       echo "<tr>";
       echo "<td>" . $user["first_name"] . "</td>";
       echo "<td>" . $user["last_name"] . "</td>";
       echo "</tr>";
-    }
     echo "</table>";
     ?>
 
