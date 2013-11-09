@@ -13,10 +13,13 @@
       <li class="float-right"><a href="#" onclick="toggleSignIn()"><i class="fa fa-sign-in"></i> Log In</a></li>
     </ul>
   </div>
-  <div class="sign-in" style="display: none;">
-    Username:
-    <br>
-    password:
+  <div class="sign-in">
+    <div>
+      &#10006;
+      Username:
+      <br>
+      password:
+    </div>
   </div>
   <div class="clear"></div>
 </div>

@@ -63,7 +63,8 @@ li.active {
   float: right;
   display: none;
   position: absolute;
-  padding-top: 10;
   width: 25%;
-  border: solid 1px;
+  border: dotted 1px #778899;
+  border-radius: 7px;
+  background-color: white;
 }
