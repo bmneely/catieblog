@@ -10,13 +10,14 @@
       <li class="<?php print $page === 'about' ? 'active' : 'inactive' ?>"><a href="/about.php">About</a></li>
       <li class="<?php print $page === 'gallery' ? 'active' : 'inactive' ?>"><a href="/gallery.php">Gallery</a></li>
       <li class="<?php print $page === 'store' ? 'active' : 'inactive' ?>"><a href="/store.php">Store</a></li>
-      <li class="float-right"><i class="fa fa-sign-in"></i> Log In</li>
+      <li class="float-right"><div onclick="myFunction()"><i class="fa fa-sign-in"></i> Log In</div></li>
     </ul>
   </div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
-  alert("hlelo");
-  $("float-right").append("ljalsdjfljlfdsajlfsdajdflasdsafljjlafsdljafsjladfsjlkafsd");
+function myFunction(){
+  alert("hljljafdljalsjlafdsjd");
+}
 </script>
