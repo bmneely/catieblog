@@ -68,3 +68,8 @@ li.active {
   border-radius: 7px;
   background-color: white;
 }
+
+.close-icon {
+  float: right;
+  text-decoration: none;
+}
