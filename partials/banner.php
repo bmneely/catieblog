@@ -10,7 +10,7 @@
       <li class="<?php print $page === 'about' ? 'active' : 'inactive' ?>"><a href="/about.php">About</a></li>
       <li class="<?php print $page === 'gallery' ? 'active' : 'inactive' ?>"><a href="/gallery.php">Gallery</a></li>
       <li class="<?php print $page === 'store' ? 'active' : 'inactive' ?>"><a href="/store.php">Store</a></li>
-      <li class="float-right"><a onclick="myFunction()"><i class="fa fa-sign-in"></i> Log In</a></li>
+      <li class="float-right"><a href="#" onclick="myFunction()"><i class="fa fa-sign-in"></i> Log In</a></li>
     </ul>
   </div>
 </div>
