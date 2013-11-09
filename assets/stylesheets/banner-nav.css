@@ -58,3 +58,11 @@ li.active {
   font-style: bold;
   color: black;
 }
+
+.sign-in {
+  position: fixed;
+  padding-top: 275;
+  width: 25%;
+  height: 250px;
+  float: right;
+}
