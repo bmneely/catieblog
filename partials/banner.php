@@ -25,7 +25,7 @@
     </div>
   </div>
   <div class="clear"></div>
-  <div class="sign-up">
+  <div class="sign-in">
       <a class="sign-in-form close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
       <br>
       <form class="sign-up-form">
