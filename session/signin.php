@@ -21,7 +21,7 @@
 		if(is_password_correct($eamil, $pass)){
 			$user = $dao->getUser($email);
 			session_start();
-			$_SESSION["name"] =  
+			$_SESSION["name"] = user_name($user);
 		}
 	}
 
