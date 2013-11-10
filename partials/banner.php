@@ -61,7 +61,6 @@
 
   $(function () {
     $('form').on('submit', function (e) {
-      alert("yaarrrr");
       $.ajax({
         type: 'post',
         url: '/session/signin.php',
