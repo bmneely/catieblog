@@ -24,7 +24,6 @@
       </form>
     </div>
   </div>
-  <div class="clear"></div>
   <div class="sign-up">
       <a class="sign-in-form close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
       <br>
@@ -38,6 +37,7 @@
   </div>
   <div class="clear"></div>
 </div>
+  <div class="clear"></div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
