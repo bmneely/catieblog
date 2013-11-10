@@ -64,7 +64,7 @@ li.active {
   margin: -15px 15px;
   right: 0;
   display: none;
-  width: 25%;
+  width: 15%;
   border: dotted 1px #778899;
   border-radius: 7px;
   background-color: white;
@@ -100,6 +100,7 @@ input {
   border-radius: 7px;
   border: 1px solid #999;
   height: 2.5em;
+  font-size: .8em;
 }
 
 label {
@@ -107,6 +108,7 @@ label {
 }
 
 input.submit {
+  padding-top:15px;
   font-family: "Bubbler One", sans-serif;
   font-size: 1em;
   background: white;
