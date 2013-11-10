@@ -9,3 +9,8 @@ if(isset($_POST['pasword'])){$time=$_POST['password']}
 echo $user."<br>";
 echo $pass;
 ?>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+ alert("jlajfldj");
+ </script>
