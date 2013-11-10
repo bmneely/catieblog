@@ -18,8 +18,8 @@
       <a class="sign-in-form close-icon" href="" onclick="toggleSignIn()">&#10006;</a>
       <br>
       <form class="sign-in-form" action="session/signin.php" method="post">
-        <label>Email:<input type="text" name="email" /></label><br/>
-        <label>Pasword:<input type="password" name="password" /></label><br/>
+        <label>Email:<br><input type="text" name="email" /></label><br/>
+        <label>Pasword:<br><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><a href="/session/signup.php">Sign Up</a></span>
       </form>
     </div>
