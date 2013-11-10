@@ -1,7 +1,5 @@
 <?php
 
-require_once "User.php";
-
 class Dao {
 
   private $host = "us-cdbr-east-04.cleardb.com";
@@ -14,7 +12,6 @@ class Dao {
       new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
           $this->pass);
   }
-
 
   public function getUsers () {
     $conn = $this->getConnection();

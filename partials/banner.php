@@ -17,9 +17,10 @@
     <div>
       <a class="close-icon" href="" onclick="toggleSignIn()">&#10006;</a>
       <br>
-      Username:
-      <br>
-      password:
+      <form action="signin/signin.php" method="post">
+        <label>Email:<input type="text" name="email" /></label><br/>
+        <label>Pasword:<input type="password" name="password" /></label><br/>
+      </form>
     </div>
   </div>
   <div class="clear"></div>
