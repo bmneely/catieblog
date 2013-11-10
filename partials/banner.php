@@ -20,7 +20,7 @@
       <form class="sign-in-form" action="session/signin.php" method="post">
         <label>Email:<br><input type="text" name="email" /></label><br/>
         <label>Pasword:<br><input type="password" name="password" /></label>
-        <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><a href="/session/signup.php">Sign Up</a></span>
+        <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><<a href="" onclick="toggleSignUp()">Sign Up</a></span>
       </form>
     </div>
   </div>
@@ -34,5 +34,9 @@
 <script>
   function toggleSignIn(){
     $(".sign-in").toggle();
+  }
+
+  function toogleSignUp(){
+    $(".sign-up").toggle();
   }
 </script>
