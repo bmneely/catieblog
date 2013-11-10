@@ -4,7 +4,7 @@
 	$user="";
 	$pass="";
 	if(isset($_POST['email'])){$time=$_POST['email']}
-	if(isset($_POST['pasword'])){$time=$_POST['password']}
+	if(isset($_POST['password'])){$time=$_POST['password']}
 
 	echo $user."<br>";
 	echo $pass;
