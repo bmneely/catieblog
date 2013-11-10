@@ -13,9 +13,9 @@
       <span id="login-area">
         <?php if(isset($_SESSION["name"]))
           {
-            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><i class='fa fa-sign-out'></i><span class='log-in-text'>" . $_SESSION["name"] ."</span></a></li>";
+            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" . $_SESSION["name"] .", Log Out</span><i class='fa fa-sign-out'></i></a></li>";
           } else {
-            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><i class='fa fa-sign-in'></i><span class='log-in-text'>Log In</span></a></li>";
+            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>Welcome Guest, Log In</span><i class='fa fa-sign-in'></i></a></li>";
           }
         ?>
       </span>
