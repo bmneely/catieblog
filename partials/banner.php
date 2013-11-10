@@ -66,7 +66,7 @@
         url: '/session/signin.php',
         data: $('form').serialize(),
         success: function () {
-          alert('form was submitted');
+          alert('<?php echo $_SESSION["name"]; ?>');
         }
       });
       e.preventDefault();
