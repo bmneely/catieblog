@@ -15,10 +15,10 @@
   </div>
   <div class="sign-in">
     <div>
-      <span class='sign-in-link'><a href="/session/signup.php">Sign Up</a></span>
-      <a class="close-icon" href="" onclick="toggleSignIn()">&#10006;</a>
+      <span class='sign-in-form sign-in-link'><a href="/session/signup.php">Sign Up</a></span>
+      <a class="sign-in-form close-icon" href="" onclick="toggleSignIn()">&#10006;</a>
       <br>
-      <form action="session/signin.php" method="post">
+      <form class="sign-in-form" action="session/signin.php" method="post">
         <label>Email:<input type="text" name="email" /></label><br/>
         <label>Pasword:<input type="password" name="password" /></label><br/>
         <input type="submit" value="Log In" />

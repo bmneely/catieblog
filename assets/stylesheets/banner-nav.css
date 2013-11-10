@@ -85,3 +85,7 @@ li.active {
   text-decoration: none;
   padding: 1px 4px;
 }
+
+.sign-in-form {
+  padding-left: 10px;
+}
