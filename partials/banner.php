@@ -26,7 +26,7 @@
   </div>
   <div class="clear"></div>
   <div class="sign-up">
-      <a class="sign-in-form close-icon" href="#" onclick="toggleSignIn()">&#10006;</a>
+      <a class="sign-in-form close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
       <br>
       <form class="sign-up-form">
         <label>First Name:<br><input type="text" name="first_name" /></label><br/>
@@ -36,6 +36,7 @@
         <input class="submit" type="submit" value="Sign up" />
       </form>
   </div>
+  <div class="clear"></div>
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
