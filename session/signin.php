@@ -1,5 +1,6 @@
 <?php
-  // require_once "/resources/Dao.php";
+  require_once "../resources/Dao.php";
+
   // $dao = new Dao();
 
 
