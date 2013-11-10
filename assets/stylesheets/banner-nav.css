@@ -89,7 +89,7 @@ li.active {
 .sign-in-form {
   padding-left: 10px;
   margin-bottom: 10px;
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 form {
@@ -97,20 +97,13 @@ form {
 }
 
 input.submit {
-    width:50px;
-    position:absolute;
-    right:20px;
-    bottom:20px;
-    background:#09C;
-    color:#fff;
-    height:30px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    border: 1p solid #999;
-    }
+  font-family: "Bubbler One", sans-serif;
+  font-size: 1.1em;
+  background: white;
+  border: none;
+} 
 
-    input.submit:hover {
-    background:#fff;
-    color:#778899;
+input.submit:hover {
+  background:#fff;
+  color:#778899;
 }
