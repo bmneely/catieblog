@@ -22,7 +22,7 @@
 			$user = $dao->getUser($email);
 			session_start();
 			// $_SESSION["name"] = user_name($user);
-      $_SESSION["name"] = $user["email"];
+      $_SESSION["name"] = "lajdfllfdasjlj";
 
 		// }
 	}
