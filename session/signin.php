@@ -3,10 +3,10 @@
 
 	$user = "";
 	$pass = "";
-	// if(isset($_POST['email']))
-	// {
-	// 	$user = $_POST['email']
-	// }
+	if(isset($_POST['email']))
+	{
+		$user = $_POST['email']
+	}
 
 	// if(isset($_POST['password']))
 	// {
@@ -19,5 +19,5 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
- alert("jlajfldj");
+ alert("In the form!");
  </script>
