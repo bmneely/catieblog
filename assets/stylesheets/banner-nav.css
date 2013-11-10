@@ -127,3 +127,7 @@ input.submit:hover {
   color:#778899;
   cursor: pointer;  
 }
+
+.hand-pointer {
+  cursor: pointer;
+}
