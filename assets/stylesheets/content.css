@@ -47,7 +47,7 @@ html, body {
   margin-bottom: 50px;
 }
 
-.post-link a:visited, a:visited {
+.post-link a:visited {
   text-decoration: none;
   color:black;
 }

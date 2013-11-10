@@ -24,13 +24,9 @@ ul {
   float: right;
 }
 
-.nav a:visited {
+.nav a:visited, a:hover {
   text-decoration: none;
   color:black;
-}
-
-.nav a:hover {
-    color:#778899;
 }
 
 li.active {
