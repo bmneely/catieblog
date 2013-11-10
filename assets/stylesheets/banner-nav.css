@@ -70,8 +70,9 @@ li.active {
   background-color: white;
 }
 
-#sign-in-link a:link, a:visited, a:hover{
+span .sign-in-link a:link, a:visited, a:hover{
   text-decoration: none;
+  font-size: 1.4em;
   color:blue;
 }
 
