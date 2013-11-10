@@ -13,9 +13,9 @@
       <span id="login-area">
         <?php if(isset($_SESSION["name"]))
           {
-            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" . $_SESSION["name"] .", Log Out</span><i class='fa fa-sign-out'></i></a></li>";
+            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" . $_SESSION["name"] ."</span><i class='fa fa-sign-out'></i></a></li>";
           } else {
-            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>Welcome Guest, Log In</span><i class='fa fa-sign-in'></i></a></li>";
+            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>Log In</span><i class='fa fa-sign-in'></i></a></li>";
           }
         ?>
       </span>
@@ -70,7 +70,7 @@
         success: function () {
           $("#login-area").empty();
           user_name = '<?php $_SESSION["name"]; ?>';
-          $("#login-area").append("<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" + user_name + ", Log Out</span><i class='fa fa-sign-out'></i></a></li>");
+          $("#login-area").append("<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" + user_name + "</span><i class='fa fa-sign-out'></i></a></li>");
         }
       });
       e.preventDefault();
