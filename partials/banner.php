@@ -29,10 +29,10 @@
       <a class="sign-in-form close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
       <br>
       <form class="sign-up-form">
-        <label>First Name:<br><input type="text" name="first_name" /></label><br/>
-        <label>Last Name:<br><input type="text" name="last_name" /></label><br/>
-        <label>Email:<br><input type="text" name="email" /></label><br/>
-        <label>Pasword:<br><input type="password" name="password" /></label>
+        <label><div>First Name:</div><input type="text" name="first_name" /></label><br/>
+        <label><div>Last Name:</div><input type="text" name="last_name" /></label><br/>
+        <label><div>Email:</div><input type="text" name="email" /></label><br/>
+        <label><div>Pasword:</div><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Sign up" />
       </form>
   </div>
