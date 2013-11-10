@@ -1,18 +1,24 @@
-<!DOCTYPE html>
-<html>
-  <?php include("../partials/head.php") ?>
-  <link href="/assets/stylesheets/store-styles.css" rel="stylesheet" type="text/css">
-<body>
-  <div id="container">
-
-    <?php include("../partials/banner.php") ?>
-
-    <div id="body">
+<?php
 
 
+	$user = "";
+	$pass = "";
+	if(isset($_POST['email']))
+	{
 
+		$user = $_POST['email'];
+	}
 
-    </div>
-    <?php include("../partials/footer.php") ?>
-  </div>
-</html>
+	if(isset($_POST['password']))
+	{
+		$pass = $_POST['password'];
+	}
+
+	// echo $user."<br>";
+	// echo $pass;
+?>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+ alert("In the form!");
+ </script>
