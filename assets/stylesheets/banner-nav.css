@@ -24,9 +24,13 @@ ul {
   float: right;
 }
 
-.nav a:visited, a:hover {
+.nav a:visited {
   text-decoration: none;
   color:black;
+}
+
+.nav a:hover {
+    color:#778899;
 }
 
 li.active {
@@ -98,7 +102,7 @@ form {
 
 input.submit {
   font-family: "Bubbler One", sans-serif;
-  font-size: 1.1em;
+  font-size: 1em;
   background: white;
   border: none;
 } 
@@ -106,5 +110,5 @@ input.submit {
 input.submit:hover {
   background:#fff;
   color:#778899;
-  cursor: pointer; 
+  cursor: pointer;  
 }
