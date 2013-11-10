@@ -8,6 +8,10 @@ ul {
   background-color: #778899;
   font-size: 1.3em;
 }
+span #login-area {
+  background-color: #778899;
+  font-size: 1.3em;
+}
 
 .nav li
 {
@@ -112,6 +116,7 @@ li.active {
 }
 
 .log-in-text {
+  font-size: 1em;
   margin-left: 15px;
 }
 
