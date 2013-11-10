@@ -97,7 +97,7 @@ li.active {
   display: none;
   height: 375px;
   margin: -15px 15px;
-  width: 350px;
+  width: 15%;
   border: dotted 1px #778899;
   border-radius: 7px;
   background-color: white;

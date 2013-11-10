@@ -15,23 +15,23 @@
   </div>
   <div class="sign-in">
     <div>
-      <a class="sign-in-form close-icon" href="#" onclick="toggleSignIn()">&#10006;</a>
+      <a class="close-icon" href="#" onclick="toggleSignIn()">&#10006;</a>
       <br>
       <form class="sign-in-form">
         <label><div>Email</div><input type="text" name="email" /></label><br/>
-        <label><div>Pasword</div><input type="password" name="password" /></label>
+        <label><div>Password</div><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><a href="#" onclick="toggleSignUp(); toggleSignIn()">Sign Up</a></span>
       </form>
     </div>
   </div>
   <div class="sign-up">
-      <a class="sign-in-form close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
+      <a class="close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
       <br>
       <form class="sign-up-form">
         <label><span class="sign-up-label">First Name</span><input type="text" name="first_name" /></label><br/>
         <label><span class="sign-up-label">Last Name</span><input type="text" name="last_name" /></label><br/>
         <label><span class="sign-up-label">Email</span><input type="text" name="email" /></label><br/>
-        <label><span class="sign-up-label">Pasword</span><input type="password" name="password" /></label>
+        <label><span class="sign-up-label">Password</span><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Sign up" />
       </form>
   </div>
@@ -42,7 +42,11 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
   function toggleSignIn(){
-    $(".sign-in").toggle();
+    if ($(".sign-up").is(":visible"){
+      toggleSignUp();
+    } else {
+      $(".sign-in").toggle();   
+    }
   }
 
   function toggleSignUp(){
