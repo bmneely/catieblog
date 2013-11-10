@@ -10,7 +10,7 @@
       <li class="<?php print $page === 'about' ? 'active' : 'inactive' ?>"><a href="/about.php">About</a></li>
       <li class="<?php print $page === 'gallery' ? 'active' : 'inactive' ?>"><a href="/gallery.php">Gallery</a></li>
       <li class="<?php print $page === 'store' ? 'active' : 'inactive' ?>"><a href="/store.php">Store</a></li>
-      <li class="float-right"><a href="#" onclick="toggleSignIn()"><i class="fa fa-sign-in"></i> Log In</a></li>
+      <li class="float-right"><a href="#" onclick="toggleSignIn()"><i class="fa fa-sign-in"></i><div class="log-in-text">Log In</div></a></li>
     </ul>
   </div>
   <div class="sign-in">
@@ -26,7 +26,13 @@
   </div>
   <div class="clear"></div>
   <div class="sign-up">
-
+      <form class="sign-up-form">
+        <label>First Name:<input type="text" name="first_name" /></label><br/>
+        <label>Last Name:<input type="text" name="last_name" /></label><br/>
+        <label>Email:<br><input type="text" name="email" /></label><br/>
+        <label>Pasword:<br><input type="password" name="password" /></label>
+        <input class="submit" type="submit" value="Sign up" />
+      </form>
   </div>
 </div>
 

@@ -1,18 +1,18 @@
 <?php
 
 
-	// $user = "";
-	// $pass = "";
+	$user = "";
+	$pass = "";
 	if(isset($_POST['email']))
 	{
 
 		$user = $_POST['email'];
 	}
 
-	// if(isset($_POST['password']))
-	// {
-	// 	$pass = $_POST['password']
-	// }
+	if(isset($_POST['password']))
+	{
+		$pass = $_POST['password'];
+	}
 
 	// echo $user."<br>";
 	// echo $pass;
