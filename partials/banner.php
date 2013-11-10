@@ -20,7 +20,7 @@
       <form class="sign-in-form">
         <label><div>Email</div><input type="text" name="email" /></label><br/>
         <label><div>Password</div><input type="password" name="password" /></label>
-        <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><a href="#" onclick="toggleSignUp(); toggleSignIn()">Sign Up</a></span>
+        <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><a href="#" onclick="toggleSignIn(); toggleSignUp()">Sign Up</a></span>
       </form>
     </div>
   </div>
