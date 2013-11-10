@@ -16,13 +16,13 @@
 	}
 
 
-	if ($email !== "" && $pass !== ""){
+	// if ($email !== "" && $pass !== ""){
 		// if(is_password_correct($email, $pass)){
 		// 	$user = $dao->getUser($email);
-			session_start();
+			// session_start();
 			// $_SESSION["name"] = user_name($user);
 		// }
-	}
+	// }
 
    // function is_password_correct($email, $password){
    // 		$user = $dao->getUser($email);
