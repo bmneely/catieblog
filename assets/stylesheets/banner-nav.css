@@ -89,18 +89,21 @@ li.active {
 .sign-in-form {
   padding-left: 10px;
   margin-bottom: 10px;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 form {
 
 }
 
-input    {
-  display:block;
+input {
   border-radius: 7px;
   border: 1px solid #999;
   height: 2.5em;
+}
+
+label {
+  display: block;
 }
 
 input.submit {
