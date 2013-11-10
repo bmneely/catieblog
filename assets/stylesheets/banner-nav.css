@@ -147,6 +147,6 @@ input.submit:hover {
   cursor: pointer;
 }
 
-.sign-up-form input {
+input .signup-input {
   padding-right: 50px;
 }
