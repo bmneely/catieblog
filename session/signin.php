@@ -5,8 +5,8 @@
 	$pass = "";
 	if(isset($_POST['email']))
 	{
-		
-		// $user = $_POST['email']
+
+		$user = $_POST['email']
 	}
 
 	// if(isset($_POST['password']))
