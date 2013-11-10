@@ -96,7 +96,7 @@ form {
 
 }
 
-input.submit {
+input.button {
     width:50px;
     position:absolute;
     right:20px;
@@ -110,7 +110,7 @@ input.submit {
     border: 1p solid #999;
     }
 
-    input.submit:hover {
+    input.button:hover {
     background:#fff;
     color:#778899;
 }
