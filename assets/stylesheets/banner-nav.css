@@ -93,6 +93,7 @@ li.active {
 }
 
 .sign-up {
+  position: absolute;
   display: none;
   height: 375px;
   margin: -15px 15px;
@@ -100,7 +101,7 @@ li.active {
   border: dotted 1px #778899;
   border-radius: 7px;
   background-color: white;
-  float: right;
+  right: 0;
 }
 
 .sign-up-form {
