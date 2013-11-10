@@ -1,12 +1,14 @@
 <?php
+  require_once "resources/Dao.php";
+  $dao = new Dao();
 
 
-	$user = "";
+	$email = "";
 	$pass = "";
 	if(isset($_POST['email']))
 	{
 
-		$user = $_POST['email'];
+		$email = $_POST['email'];
 	}
 
 	if(isset($_POST['password']))
@@ -14,11 +16,38 @@
 		$pass = $_POST['password'];
 	}
 
-	// echo $user."<br>";
-	// echo $pass;
-?>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
- alert("In the form!");
- </script>
+	if ($email !== "" && $pass !== ""){
+		if(is_password_correct($eamil, $pass)){
+			$user = $dao->getUser($email);
+			session_start();
+			$_SESSION["name"] =  
+		}
+	}
+
+
+
+
+   function is_password_correct($email, $password){
+   		$user = $dao->getUser($email);
+   		if ($user["password"] == $password){
+   			return TRUE;
+   		}
+   		return FALSE;
+   }
+
+  function user_name($user){
+  	$user_name = ""
+  	if ($user["first_name"] == NULL || $user["first_name"] == ""){
+  		if ($user["last_name"] == NULL || $user["last_name"] == ""){
+  			$user_name = $user["email"];
+  		} else {
+  			$user_name = ucwords($user["last_name"]);
+  		}
+  	}
+  	else {
+  		$user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
+  	}
+  	return $user_name;
+  }
+?>
