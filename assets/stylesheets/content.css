@@ -47,13 +47,9 @@ html, body {
   margin-bottom: 50px;
 }
 
-.post-link a:visited {
+.post-link a:hover, a:visited {
   text-decoration: none;
   color:black;
-}
-
-.post-link a:hover {
-  color:#778899;
 }
 
 .post-container {
