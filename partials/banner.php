@@ -10,7 +10,7 @@
       <li class="<?php print $page === 'about' ? 'active' : 'inactive' ?>"><a href="/about.php">About</a></li>
       <li class="<?php print $page === 'gallery' ? 'active' : 'inactive' ?>"><a href="/gallery.php">Gallery</a></li>
       <li class="<?php print $page === 'store' ? 'active' : 'inactive' ?>"><a href="/store.php">Store</a></li>
-      <span id="login-area">
+      <li id="float-right">
         <?php if(isset($_SESSION["name"]))
           {
             echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" . $_SESSION["name"] ."</span><i class='fa fa-sign-out'></i></a></li>";
@@ -18,7 +18,7 @@
             echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>Log In</span><i class='fa fa-sign-in'></i></a></li>";
           }
         ?>
-      </span>
+      </li>
     </ul>
   </div>
   <div class='sign-in'>
