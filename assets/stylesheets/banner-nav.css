@@ -70,9 +70,14 @@ li.active {
   background-color: white;
 }
 
-.sign-in-link a:link, a:visited, a:hover{
-  text-decoration: none;
+.sign-in-link a:link {
   color:blue;
+  text-decoration: none;
+}
+
+.sign-in-link a:visited, a:hover{
+  color:blue;
+  text-decoration: none;
 }
 
 .close-icon {
