@@ -26,6 +26,8 @@
   </div>
   <div class="clear"></div>
   <div class="sign-up">
+      <a class="sign-in-form close-icon" href="#" onclick="toggleSignIn()">&#10006;</a>
+      <br>
       <form class="sign-up-form">
         <label>First Name:<input type="text" name="first_name" /></label><br/>
         <label>Last Name:<input type="text" name="last_name" /></label><br/>
@@ -42,7 +44,7 @@
     $(".sign-in").toggle();
   }
 
-  function toogleSignUp(){
+  function toggleSignUp(){
     $(".sign-up").toggle();
   }
 
