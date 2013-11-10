@@ -15,7 +15,7 @@
   </div>
   <div class="sign-in">
     <div>
-      <span class='sign-in-link'><a href="/session/signup.php">Sign Up</a></span>
+      <span id='sign-in-link'><a href="/session/signup.php">Sign Up</a></span>
       <a class="close-icon" href="" onclick="toggleSignIn()">&#10006;</a>
       <br>
       <form action="session/signin.php" method="post">
