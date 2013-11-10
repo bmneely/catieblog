@@ -18,8 +18,8 @@
       <a class="sign-in-form close-icon" href="#" onclick="toggleSignIn()">&#10006;</a>
       <br>
       <form class="sign-in-form">
-        <label>Email:<br><input type="text" name="email" /></label><br/>
-        <label>Pasword:<br><input type="password" name="password" /></label>
+        <label><div>Email</div><input type="text" name="email" /></label><br/>
+        <label><div>Pasword</div><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><a href="#" onclick="toggleSignUp(); toggleSignIn()">Sign Up</a></span>
       </form>
     </div>
@@ -28,10 +28,10 @@
       <a class="sign-in-form close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
       <br>
       <form class="sign-up-form">
-        <label><span>First Name:</span><input type="text" name="first_name" /></label><br/>
-        <label><span>Last Name:</span><input type="text" name="last_name" /></label><br/>
-        <label><span>Email:</span><input type="text" name="email" /></label><br/>
-        <label><span>Pasword:</span><input type="password" name="password" /></label>
+        <label><span>First Name</span><input type="text" name="first_name" /></label><br/>
+        <label><span>Last Name</span><input type="text" name="last_name" /></label><br/>
+        <label><span>Email</span><input type="text" name="email" /></label><br/>
+        <label><span>Pasword</span><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Sign up" />
       </form>
   </div>
