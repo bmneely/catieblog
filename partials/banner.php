@@ -42,8 +42,8 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
   function toggleSignIn(){
-    if ($(".sign-up").is(":visible"){
-      toggleSignUp();
+    if ($(".sign-up").is(":visible")){
+      $(".sign-up").toggle();
     } else {
       $(".sign-in").toggle();   
     }
