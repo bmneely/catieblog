@@ -21,7 +21,7 @@
       <form class="sign-in-form" action="session/signin.php" method="post">
         <label>Email:<input type="text" name="email" /></label><br/>
         <label>Pasword:<input type="password" name="password" /></label><br/>
-        <input type="button" value="Log In" />
+        <input class="submit" type="submit" value="Log In" />
       </form>
     </div>
   </div>
