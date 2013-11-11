@@ -1,24 +1,63 @@
 <?php
+  require_once "../resources/Dao.php";
+
+  $dao = new Dao();
+
+	$email = $_POST['email'];
+	$first = $_POST['first'];
+	$last = $_POST['last'];
+	$hashed_password = crypt($_POST['password']);
+	$role = "USER";
 
 
-	$user = "";
-	$pass = "";
-	if(isset($_POST['email']))
-	{
 
-		$user = $_POST['email'];
-	}
+    try {
+      $dao->saveUser($first, $last, $email, $hashed_password, $role);
+    } catch (Exception $e) {
+      var_dump($e);
+      die;
+    }
 
-	if(isset($_POST['password']))
-	{
-		$pass = $_POST['password'];
-	}
 
-	// echo $user."<br>";
-	// echo $pass;
+	// if ($email !== "" && $pass !== ""){
+	// 		$user = $dao->getUser($email);
+ //    if(is_password_correct($user, $email, $pass)){
+	// 		session_start();
+	// 		$_SESSION["name"] = user_name($user);
+	// 	}
+	// }
+
+ //  function is_password_correct($user, $email, $password){
+ // 		if ($user["password"] === $password){
+ // 			return TRUE;
+ // 		} else {
+ // 	  	return FALSE;
+ //    }
+ //  }
+
+ //  function user_name($user){
+ //  	$user_name = "";
+ //  	if (is_null($user["first_name"]) || $user["first_name"] === ""){
+ //  		if (is_null($user["last_name"])|| $user["last_name"] === ""){
+ //  			$user_name = $user["email"];
+ //  		} else {
+ //  			$user_name = ucwords($user["last_name"]);
+ //  		}
+ //  	}
+ //  	else {
+ //  		$user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
+ //  	}
+ //  	return $user_name;
+ //  }
 ?>
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>
- alert("In the form!");
- </script>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
+</head>
+<body>
+  
+</body>
+</html>

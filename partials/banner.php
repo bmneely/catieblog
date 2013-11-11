@@ -40,8 +40,8 @@
       <a class="close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
       <br>
       <form class="sign-up-form">
-        <label><span class="sign-up-label">First Name</span><input type="text" name="first_name" /></label><br/>
-        <label><span class="sign-up-label">Last Name</span><input type="text" name="last_name" /></label><br/>
+        <label><span class="sign-up-label">First Name</span><input type="text" name="first" /></label><br/>
+        <label><span class="sign-up-label">Last Name</span><input type="text" name="last" /></label><br/>
         <label><span class="sign-up-label">Email</span><input type="text" name="email" /></label><br/>
         <label><span class="sign-up-label">Password</span><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Sign up" />
