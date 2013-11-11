@@ -22,6 +22,7 @@
     if(is_password_correct($user, $email, $pass)){
 			session_start();
 			$_SESSION["name"] = user_name($user);
+		}
 	}
 
   function is_password_correct($user, $email, $password){
@@ -55,6 +56,6 @@
   <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
 </head>
 <body>
-
+  
 </body>
 </html>
