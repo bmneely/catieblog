@@ -26,8 +26,7 @@ span #login-area {
 }
 
 .float-right {
-  position: absolute;
-  right: 0;
+  float: right;
 }
 
 .nav a:visited, a:hover {
@@ -117,9 +116,8 @@ li.active {
 }
 
 .log-in-text {
-  font-size: 1em;
-/*  margin-left: 15px;
-*/}
+  padding-right: 15px;
+}
 
 input {
   border-radius: 7px;
