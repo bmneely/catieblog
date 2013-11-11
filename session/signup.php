@@ -10,12 +10,12 @@
 	$role = "USER";
 
 
-
-    try {
       $dao->saveUser($first, $last, $email, $hashed_password, $role);
-    } catch (Exception $e) {
-      echo var_dump($e);
-    }
+
+    // try {
+    // } catch (Exception $e) {
+    //   echo var_dump($e);
+    // }
 
 
 	// if ($email !== "" && $pass !== ""){
