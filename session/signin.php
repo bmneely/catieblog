@@ -18,22 +18,19 @@
 
 
 	if ($email !== "" && $pass !== ""){
-		if(is_password_correct($email, $pass)){
 			$user = $dao->getUser($email);
+    if(is_password_correct($user, $email, $pass)){
 			session_start();
 			$_SESSION["name"] = user_name($user);
 		}
 	}
 
-  function is_password_correct($email, $password){
-    $u = $dao->getUser($email);
-    echo $password;
-    return TRUE;
- 		// if ($user["password"] === $password){
- 		// 	return TRUE;
- 		// } else {
- 	 //  	return FALSE;
-   //  }
+  function is_password_correct($user, $email, $password){
+ 		if ($user["password"] === $password){
+ 			return TRUE;
+ 		} else {
+ 	  	return FALSE;
+    }
   }
 
   function user_name($user){
