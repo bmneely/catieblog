@@ -22,9 +22,6 @@
     if(is_password_correct($user, $email, $pass)){
 			session_start();
 			$_SESSION["name"] = user_name($user);
-		} else {
-      echo "lajdfsldafsldfasldfaslfdlasldfsaljfdsaljdfsaljkfdsaljkfdsajlkafds;jlfadslj;dfsaljlfkadsljk;fadsljksadffdsajkldf";
-    }
 	}
 
   function is_password_correct($user, $email, $password){
@@ -55,7 +52,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
+  <?php echo '<meta http-equiv="refresh" content="0; url="' . $_POST['return']; . '" />'?>
 </head>
 <body>
   
