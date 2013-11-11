@@ -52,11 +52,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <?php
-    echo "<meta http-equiv='refresh' content='0; url='" . $_POST["return"] . "' />";
-  ?>
+
+  <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
 </head>
 <body>
-  
+    <?php
+    echo "<meta http-equiv='refresh' content='0; url='" . $_POST["return"] . "' />";
+  ?>
 </body>
 </html>
