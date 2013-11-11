@@ -52,8 +52,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <!-- <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" /> -->
+  <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
 </head>
 <body>
 
