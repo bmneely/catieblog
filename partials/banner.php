@@ -74,10 +74,7 @@
         data: $('form').serialize(),
         success: function () {
           $("#login-area").empty();
-          console.log('ljalfsdjhlash');
-          console.log('<?php $_SESSION["name"]; ?>')
-          console.log('<?php echo "hello"; ?>')
-          user_name = '<?php $_SESSION["name"]; ?>';
+          user_name = '<?php echo $_SESSION["name"]; ?>';
           $("#login-area").append("<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" + user_name + "</span><i class='fa fa-sign-out'></i></a></li>");
         }
       });
