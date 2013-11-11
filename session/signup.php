@@ -7,7 +7,7 @@
 	$first = $_POST['first'];
 	$last = $_POST['last'];
 	// $hashed_password = crypt($_POST['password']);
-	$hashed_password = $_POST['password']
+	$hashed_password = $_POST['password'];
 	$role = "USER";
 
 
@@ -55,7 +55,13 @@
 </head>
 <body>
   <h1>
-
+  	<?php
+  		echo $email; 
+			echo $first; 
+			echo $last; 
+ 			echo $hashed_password;
+			echo $role; 
+  	?>
   </h1>
 </body>
 </html>
