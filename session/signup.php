@@ -6,17 +6,14 @@
 	$email = $_POST['email'];
 	$first = $_POST['first'];
 	$last = $_POST['last'];
-	$hashed_password = crypt($_POST['password']);
+	// $hashed_password = crypt($_POST['password']);
+	$hashed_password = $_POST['password']
 	$role = "USER";
 
 
       $dao->saveUser($first, $last, $email, $hashed_password, $role);
 
-    // try {
-    // } catch (Exception $e) {
-    //   echo var_dump($e);
-    // }
-
+      
 
 	// if ($email !== "" && $pass !== ""){
 	// 		$user = $dao->getUser($email);
@@ -57,6 +54,14 @@
   <!-- <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" /> -->
 </head>
 <body>
-  
+  <h1>
+  	<?php
+  		echo $email 
+			echo $first 
+			echo $last 
+ 			echo $hashed_password
+			echo $role 
+  	?>
+  </h1>
 </body>
 </html>

@@ -40,7 +40,6 @@ class Dao {
       $q->bindParam(":email", $email);
       $q->bindParam(":pass", $pass);
       $q->bindParam(":role", $role);
-
       $q->execute();
   }
 
