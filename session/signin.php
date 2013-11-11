@@ -56,13 +56,6 @@
   <!-- <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" /> -->
 </head>
 <body>
-    <?php
-    if (isset($_POST["return"])){
-    echo $_POST["return"];
-    }
-    else{
-      echo "ljasfdljdflsjfal";
-    }
-  ?>
+
 </body>
 </html>
