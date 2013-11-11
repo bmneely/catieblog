@@ -29,7 +29,7 @@
     <div>
       <a class="close-icon" href="#" onclick="toggleSignIn()">&#10006;</a>
       <br>
-      <form class="sign-in-form">
+      <form class="sign-in-form" action="../session/signin.php" method="post">
         <label><div>Email</div><input type="text" name="email" /></label><br/>
         <label><div>Password</div><input type="password" name="password" /></label>
         <input class="submit" type="submit" value="Log In" />/<span class='sign-in-form sign-in-link'><a href="#" onclick="toggleSignIn(); toggleSignUp()">Sign Up</a></span>
@@ -65,23 +65,23 @@
     $(".sign-up").toggle();
   }
 
-  $(function () {
-    $('form').on('submit', function (e) {
-      $.ajax({
-        type: 'post',
-        url: '/session/signin.php',
-        data: $('form').serialize(),
-        success: function () {
-          $("#login-area").empty();
+  // $(function () {
+  //   $('form').on('submit', function (e) {
+  //     $.ajax({
+  //       type: 'post',
+  //       url: '/session/signin.php',
+  //       data: $('form').serialize(),
+  //       success: function () {
+  //         $("#login-area").empty();
 
-          user_name = '<?php session_start(); echo $_SESSION["name"]; ?>';
-          console.log(user_name);
-          $("#login-area").append("<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" + user_name + "</span><i class='fa fa-sign-out'></i></a></li>");
-        }
-      });
-      e.preventDefault();
-    });
-  });
+  //         user_name = '<?php session_start(); echo $_SESSION["name"]; ?>';
+  //         console.log(user_name);
+  //         $("#login-area").append("<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" + user_name + "</span><i class='fa fa-sign-out'></i></a></li>");
+  //       }
+  //     });
+  //     e.preventDefault();
+  //   });
+  // });
 
 
 </script>
