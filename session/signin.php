@@ -36,7 +36,7 @@
 
   function user_name($user){
     // echo $user;
-    echo var_dump($user);
+    echo $user["first_name"];
   	$user_name = ""
   	// if (is_null($user["first_name"]) || $user["first_name"] === ""){
   	// 	// if (is_null($user["last_name"])|| $user["last_name"] === ""){
