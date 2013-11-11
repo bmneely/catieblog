@@ -17,7 +17,7 @@
         <?php
         if(isset($_SESSION["name"]))
           {
-            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" . $_SESSION["name"] ."</span><i class='fa fa-sign-out'></i></a></li>";
+            echo "<li class='float-right'><a href='../session/signout.php'><span class='log-in-text'>" . $_SESSION["name"] ."</span><i class='fa fa-sign-out'></i></a></li>";
           } else {
             echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>Log In</span><i class='fa fa-sign-in'></i></a></li>";
           }
