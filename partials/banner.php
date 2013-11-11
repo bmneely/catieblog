@@ -20,9 +20,7 @@
           {
             echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" . $_SESSION["name"] ."</span><i class='fa fa-sign-out'></i></a></li>";
           } else {
-            ?>
-            <li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>Log In</span><i class='fa fa-sign-in'></i></a></li>";
-            <?php
+            echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>Log In</span><i class='fa fa-sign-in'></i></a></li>";
           }
         ?>
       </span>
