@@ -14,7 +14,7 @@
     try {
       $dao->saveUser($first, $last, $email, $hashed_password, $role);
     } catch (Exception $e) {
-      var_dump($e);
+      var_dump($e)
     }
 
 
@@ -54,7 +54,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
+  <!-- <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" /> -->
 </head>
 <body>
   
