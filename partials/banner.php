@@ -1,3 +1,6 @@
+<?php 
+  session_start();
+?>
 <div id="header">
   <div>
     <a href="/index.php"><img id="logo" src="/assets/images/logo.jpg" alt="cricket and bea"></a>
@@ -12,10 +15,6 @@
       <li class="<?php print $page === 'store' ? 'active' : 'inactive' ?>"><a href="/store.php">Store</a></li>
       <span id="login-area">
         <?php
-        
-        echo "lajdfsljasdljfd";
-        echo $_SESSION["name"];
-
         if(isset($_SESSION["name"]))
           {
             echo "<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" . $_SESSION["name"] ."</span><i class='fa fa-sign-out'></i></a></li>";
