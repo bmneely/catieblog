@@ -14,7 +14,7 @@
         <?php
 
          session_start();
-         $_SESSION['user'] = "Ben Neely";
+         $_SESSION['name'] = "Ben Neely";
 
         if(isset($_SESSION["name"]))
           {
