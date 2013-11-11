@@ -6,8 +6,8 @@
 	$email = $_POST['email'];
 	$first = $_POST['first'];
 	$last = $_POST['last'];
-	// $hashed_password = crypt($_POST['password']);
-	$hashed_password = $_POST['password'];
+	$hashed_password = crypt($_POST['password']);
+	// $hashed_password = $_POST['password'];
 	$role = "USER";
 
 
