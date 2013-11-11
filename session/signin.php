@@ -22,7 +22,6 @@
 			$user = $dao->getUser($email);
 			session_start();
 			$_SESSION["name"] = user_name($user);
-
 		}
 	}
 
@@ -30,8 +29,9 @@
  		$user = $dao->getUser($email);
  		if ($user["password"] === $password){
  			return TRUE;
- 		}
- 		return FALSE;
+ 		} else {
+ 	  	return FALSE;
+    }
   }
 
   function user_name($user){
