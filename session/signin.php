@@ -17,7 +17,8 @@
 	}
 
   session_start();
-        $_SESSION["name"] = "lajdfllfdasjlj";
+  $_SESSION["name"] = "lajdfllfdasjlj";
+
 
 
 	// if ($email !== "" && $pass !== ""){
@@ -53,3 +54,5 @@
   // 	return $user_name;
   // }
 ?>
+
+asdflhjas;dlfdsaljhfsdakljafsdkdfsaldfajsl;fdsaljfadsl;dfsajl;adsfljk;adfsjlk;dsafljk;
