@@ -13,7 +13,6 @@
 
       $dao->saveUser($first, $last, $email, $hashed_password, $role);
 
-      
 
 	// if ($email !== "" && $pass !== ""){
 	// 		$user = $dao->getUser($email);
@@ -56,11 +55,11 @@
 <body>
   <h1>
   	<?php
-  		echo $email; 
-			echo $first; 
-			echo $last; 
+  	// 	echo $email; 
+			// echo $first; 
+			// echo $last; 
  			echo $hashed_password;
-			echo $role; 
+			// echo $role; 
   	?>
   </h1>
 </body>
