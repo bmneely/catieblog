@@ -22,7 +22,9 @@
     if(is_password_correct($user, $email, $pass)){
 			session_start();
 			$_SESSION["name"] = user_name($user);
-		}
+		} else {
+      echo "lajdfsldafsldfasldfaslfdlasldfsaljfdsaljdfsaljkfdsaljkfdsajlkafds;jlfadslj;dfsaljlfkadsljk;fadsljksadffdsajkldf";
+    }
 	}
 
   function is_password_correct($user, $email, $password){
@@ -48,7 +50,8 @@
   	return $user_name;
   }
 ?>
-<<!doctype html>
+
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
