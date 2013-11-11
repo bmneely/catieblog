@@ -15,7 +15,6 @@
       $dao->saveUser($first, $last, $email, $hashed_password, $role);
     } catch (Exception $e) {
       var_dump($e);
-      die;
     }
 
 
