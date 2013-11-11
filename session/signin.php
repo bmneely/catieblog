@@ -57,7 +57,12 @@
 </head>
 <body>
     <?php
+    if (isset($_POST["return"])){
     echo $_POST["return"];
+    }
+    else{
+      echo "ljasfdljdflsjfal";
+    }
   ?>
 </body>
 </html>
