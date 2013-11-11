@@ -53,6 +53,8 @@
   // 	}
   // 	return $user_name;
   // }
+
+  echo "HELOOOOO   ";
+  echo $_SESSION["name"];
 ?>
 
-asdflhjas;dlfdsaljhfsdakljafsdkdfsaldfajsl;fdsaljfadsl;dfsajl;adsfljk;adfsjlk;dsafljk;
