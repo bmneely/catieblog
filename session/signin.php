@@ -53,7 +53,7 @@
 <head>
   <meta charset="UTF-8">
   <?php
-    echo '<meta http-equiv="refresh" content="0; url="' . $_POST['return']; . '" />';
+    echo "<meta http-equiv='refresh' content='0; url='" . $_POST["return"]; . "' />";
   ?>
 </head>
 <body>
