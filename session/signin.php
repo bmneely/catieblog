@@ -26,7 +26,7 @@
 	}
 
   function is_password_correct($email, $password){
- 		// $user = $dao->getUser($email);
+    $u = $dao->getUser($email);
     echo $password;
     return TRUE;
  		// if ($user["password"] === $password){
