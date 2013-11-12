@@ -2,7 +2,7 @@
 
   class Pass {
 
-    private $salt = '@#soRand!&)**()'
+    private $salt = '@#soRand!&)**()';
 
     public function is_password_correct($user, $password){
       if ($user["password"] === $password){
