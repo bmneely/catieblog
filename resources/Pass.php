@@ -13,8 +13,8 @@
     }
 
     public function crypt_pass($plain_pass){
-      // return crypt($plain_pass, $salt);
-      return $plain_pass;
+      return crypt($plain_pass, $salt);
+      // return $plain_pass;
     }
 
   }
