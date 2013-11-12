@@ -13,7 +13,7 @@
 
 	if(isset($_POST['password']))
 	{
-		$pass = $_POST['password'];
+		$pass = crypt($_POST['password']);
 	}
 
 
