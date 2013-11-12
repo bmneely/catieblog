@@ -4,7 +4,7 @@
 
     private $salt = '@#soRand!&)**()'
 
-    function is_password_correct($user, $password){
+    public function is_password_correct($user, $password){
       if ($user["password"] === $password){
         return TRUE;
       } else {
@@ -12,9 +12,10 @@
       }
     }
 
-    function crypt_pass($plain_pass){
+    public function crypt_pass($plain_pass){
       return crypt($plain_pass, $salt);
     }
+
   }
 
 ?>

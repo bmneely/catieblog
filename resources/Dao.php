@@ -60,4 +60,4 @@ class Dao {
     $conn = $this->getConnection();
     return $conn->query("SELECT * FROM comment");
   }
-} // end Dao
+}
