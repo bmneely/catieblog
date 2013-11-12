@@ -31,10 +31,10 @@ class Dao {
     $conn = $this->getConnection();
     $saveQuery =
       "INSERT INTO user
-      (first, last, email, pass, role)
+      (first_name, last_name, email, password, role)
       VALUES
       (:first, :last, :email, :pass, :role)";
-      
+
       $q = $conn->prepare($saveQuery);
       $q->bindParam(":first", $first);
       $q->bindParam(":last", $last);
