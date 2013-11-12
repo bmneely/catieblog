@@ -8,7 +8,8 @@
 	$email = $_POST['email'];
 	$first = $_POST['first'];
 	$last = $_POST['last'];
-	$hashed_password = $pass->crypt_pass($_POST['password']);
+	$hashed_password = "lajfldsjl"
+	// $hashed_password = $pass->crypt_pass($_POST['password']);
 	$role = "USER";
 
 	$dao->saveUser($first, $last, $email, $hashed_password, $role);
