@@ -34,6 +34,7 @@ class Dao {
       (first, last, email, pass, role)
       VALUES
       (:first, :last, :email, :pass, :role)";
+      
       $q = $conn->prepare($saveQuery);
       $q->bindParam(":first", $first);
       $q->bindParam(":last", $last);
