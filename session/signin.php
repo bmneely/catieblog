@@ -1,7 +1,9 @@
 <?php
   require_once "../resources/Dao.php";
+  require_once "../resources/Pass.php";
 
   $dao = new Dao();
+  $pass = new Pass();
 
 	$email = "";
 	$pass = "";
@@ -13,25 +15,18 @@
 
 	if(isset($_POST['password']))
 	{
-		$pass = crypt($_POST['password']);
+		$pass = $pass->crypt_pass($_POST['password']);
 	}
 
 
 	if ($email !== "" && $pass !== ""){
 			$user = $dao->getUser($email);
-    if(is_password_correct($user, $email, $pass)){
+    if($pass->is_password_correct($user, $pass)){
 			session_start();
 			$_SESSION["name"] = user_name($user);
 		}
 	}
 
-  function is_password_correct($user, $email, $password){
- 		if ($user["password"] === $password){
- 			return TRUE;
- 		} else {
- 	  	return FALSE;
-    }
-  }
 
   function user_name($user){
   	$user_name = "";
