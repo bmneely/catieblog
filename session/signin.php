@@ -21,10 +21,10 @@
 
 	if ($email !== "" && $password !== ""){
 			$user = $dao->getUser($email);
-    if($pass->is_password_correct($user, $password)){
+    // if($pass->is_password_correct($user, $password)){
 			session_start();
 			$_SESSION["name"] = user_name($user);
-		}
+		// }
 	}
 
 
