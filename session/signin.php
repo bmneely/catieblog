@@ -15,35 +15,34 @@
 
 	if(isset($_POST['password']))
 	{
-		$pass = $pass->crypt_pass($_POST['password']);
+		$password = $pass->crypt_pass($_POST['password']);
 	}
 
 
-	if ($email !== "" && $pass !== ""){
+	if ($email !== "" && $password !== ""){
 			$user = $dao->getUser($email);
-    if($pass->is_password_correct($user, $pass)){
+    if($pass->is_password_correct($user, $password)){
 			session_start();
-			// $_SESSION["name"] = user_name($user);
-      // $_SESSION["name"] =  "Ben Neely";
+			$_SESSION["name"] = user_name($user);
 
 		}
 	}
 
 
-  // function user_name($user){
-  // 	$user_name = "";
-  // 	if (is_null($user["first_name"]) || $user["first_name"] === ""){
-  // 		if (is_null($user["last_name"])|| $user["last_name"] === ""){
-  // 			$user_name = $user["email"];
-  // 		} else {
-  // 			$user_name = ucwords($user["last_name"]);
-  // 		}
-  // 	}
-  // 	else {
-  // 		$user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
-  // 	}
-  // 	return $user_name;
-  // }
+  function user_name($user){
+  	$user_name = "";
+  	if (is_null($user["first_name"]) || $user["first_name"] === ""){
+  		if (is_null($user["last_name"])|| $user["last_name"] === ""){
+  			$user_name = $user["email"];
+  		} else {
+  			$user_name = ucwords($user["last_name"]);
+  		}
+  	}
+  	else {
+  		$user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
+  	}
+  	return $user_name;
+  }
 ?>
 
 <!doctype html>
