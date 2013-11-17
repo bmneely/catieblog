@@ -18,13 +18,4 @@
     }
 
   }
-
-  $pass = new Pass();
-
-  $test = [];
-
-  $test["password"] = "chinese1";
-
-  echo $pass->is_password_correct($test, "chinese1") . "\n";
-
 ?>
