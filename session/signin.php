@@ -6,7 +6,7 @@
   $pass = new Pass();
 
 	$email = "";
-	$pass = "";
+	$password = "";
 
 	if(isset($_POST['email']))
 	{
@@ -24,7 +24,6 @@
     if($pass->is_password_correct($user, $password)){
 			session_start();
 			$_SESSION["name"] = user_name($user);
-
 		}
 	}
 
