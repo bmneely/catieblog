@@ -82,9 +82,9 @@
 </head>
 <body>
   <h1> <?php echo $user; ?></h1>
-  <h1> <?php echo  is_null($user); ?></h1>
-  <h1> <?php echo  $_SESSION["email_error"]; ?></h1>
-  <h1> <?php echo  $_SESSION["form_errors"]; ?></h1>
+  <h1> <?php echo  "user is null " . is_null($user); ?></h1>
+  <h1> <?php echo  "user error " . $_SESSION["email_error"]; ?></h1>
+  <h1> <?php echo  "form errors " . $_SESSION["form_errors"]; ?></h1>
 
 </body>
 </html>
