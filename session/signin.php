@@ -36,7 +36,7 @@
     $password = $pass->crypt_pass($_POST['password']);
   }
 
-	if (!isset($_SESSION['form_errors']) && $_SESSION['form_errors']){
+	if (!isset($_SESSION['form_errors']) || !$_SESSION['form_errors']){
 		$user = $dao->getUser($email);
 
     if(is_null($user)){
