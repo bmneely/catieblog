@@ -39,7 +39,7 @@
 	if (!isset($_SESSION['form_errors']) || !$_SESSION['form_errors']){
 		$user = $dao->getUser($email);
 
-    if(is_null($user) == 1){
+    if (is_null($user) ) {
       $_SESSION["form_errors"] = true;
       $_SESSION["email_error"] = "Account not found";
       $_SESSION["email"] = $email;
@@ -78,8 +78,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
+  <!-- <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" /> -->
 </head>
 <body>
+  <h1> <?php echo $user; ?></h1>
+  <h1> <?php echo  is_null($user); ?></h1>
 </body>
 </html>
