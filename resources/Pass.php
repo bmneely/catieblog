@@ -7,15 +7,14 @@
     public function is_password_correct($user, $password){
       if ($user["password"] === $password){
         echo "yar";
-        return TRUE;
+        return true;
       } else {
-        return FALSE;
+        return false;
       }
     }
 
     public function crypt_pass($plain_pass){
       return crypt($plain_pass, $this->salt);
     }
-
   }
 ?>
