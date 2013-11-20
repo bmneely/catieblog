@@ -5,6 +5,7 @@
   $dao = new Dao();
   $pass = new Pass();
   session_start();
+    $_SESSION["form_errors"] = true;
 
 	$email = "";
 	$password = "";
