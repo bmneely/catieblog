@@ -6,27 +6,26 @@
   $pass = new Pass();
   session_start();
 
-  
-  $_SESSION["form_errors"] = true;
-  $_SESSION["email_error"] = "An email is required";
-
-
 	$email = "";
 	$password = "";
 
-	if(isset($_POST['email']))
-	{
-		$email = $_POST['email'];
-	}
-  else {
+  if(empty($_POST["email"])) {
     $_SESSION["form_errors"] = true;
     $_SESSION["email_error"] = "An email is required";
+  } else {
+    $email = test_input($_POST["email"])
+    if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)){
+      $_SESSION["form_errors"] = true;
+      $_SESSION["email_error"] = "Your email is invalid";
+    } 
   }
 
-	if(isset($_POST['password']))
-	{
-		$password = $pass->crypt_pass($_POST['password']);
-	}
+  if(empty($_POST["pasword"])) {
+    $_SESSION["form_errors"] = true;
+    $_SESSION["password_error"] = "A password is required";
+  } else {
+    $password = $pass->crypt_pass($_POST['password']);
+  }
 
 
 	if ($email !== "" && $password !== ""){
@@ -34,8 +33,11 @@
     if($pass->is_password_correct($user, $password)){
 			$_SESSION["name"] = user_name($user);
 		}
+    else {
+      $_SESSION["form_errors"] = true;
+      $_SESSION["password_error"] = "Invalid password";
+    }
 	}
-
 
   function user_name($user){
   	$user_name = "";
@@ -49,6 +51,14 @@
   		$user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
   	}
   	return $user_name;
+  }
+
+  function test_input($data)
+  {
+     $data = trim($data);
+     $data = stripslashes($data);
+     $data = htmlspecialchars($data);
+     return $data;
   }
 ?>
 
