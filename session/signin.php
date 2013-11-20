@@ -17,7 +17,7 @@
     $email = test_input($_POST["email"]);
     if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
       $_SESSION["form_errors"] = true;
-      $_SESSION["email_error"] = "A valid email is invalid";
+      $_SESSION["email_error"] = "A valid email is required";
     } 
   }
 
@@ -30,6 +30,10 @@
 
 	if (!isset($_SESSION['form_errors'])){
 		$user = $dao->getUser($email);
+
+    if(is_null($user)){
+      echo "ljalsdjl"
+    }
     
     if($pass->is_password_correct($user, "$password")){
 			$_SESSION["name"] = user_name($user);
