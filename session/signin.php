@@ -5,7 +5,11 @@
   $dao = new Dao();
   $pass = new Pass();
   session_start();
-    $_SESSION["form_errors"] = true;
+
+  
+  $_SESSION["form_errors"] = true;
+  $_SESSION["email_error"] = "An email is required";
+
 
 	$email = "";
 	$password = "";
