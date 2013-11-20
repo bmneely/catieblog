@@ -28,7 +28,7 @@
     } 
   }
 
-  if(empty($_POST["password"])) {
+  if(($_POST["password"]) === "") {
     $_SESSION["form_errors"] = true;
     $_SESSION["password_error"] = "A password is required";
     $_SESSION["email"] = $email;
