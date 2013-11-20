@@ -75,6 +75,8 @@
   <!-- <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" /> -->
 </head>
 <body>
-  <h1>  <?php echo is_null($user) ?> </h1>
+  <h1>  <?php "User!!!!"; ?> </h1>
+
+  <h1>  <?php echo is_null($user); ?> </h1>
 </body>
 </html>
