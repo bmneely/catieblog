@@ -6,4 +6,5 @@
   <link href="/assets/stylesheets/footer.css" rel="stylesheet" type="text/css">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="icon" type="image/gif" href="/assets/images/favicon.gif" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>

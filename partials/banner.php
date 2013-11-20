@@ -50,7 +50,7 @@
   <div class="clear"></div>
 </div>
   <div class="clear"></div>
-
+<!-- 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>
   function toggleSignIn(){
@@ -84,4 +84,4 @@
   // });
 
 
-</script>
+</script> -->
