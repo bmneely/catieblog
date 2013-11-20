@@ -18,6 +18,7 @@
     if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
       $_SESSION["form_errors"] = true;
       $_SESSION["email_error"] = "A valid email is required";
+      $_SESSION["email"] = $email;
     } 
   }
 
@@ -34,7 +35,7 @@
     if(is_null($user)){
       $_SESSION["form_errors"] = true;
       $_SESSION["email_error"] = "Account not found";
-    } else  if($pass->is_password_correct($user, "$password")){
+    } else if($pass->is_password_correct($user, "$password")){
 			$_SESSION["name"] = user_name($user);
 		} else {
       $_SESSION["form_errors"] = true;
