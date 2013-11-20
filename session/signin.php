@@ -27,6 +27,7 @@
   if(empty($_POST["password"])) {
     $_SESSION["form_errors"] = true;
     $_SESSION["password_error"] = "A password is required";
+    $_SESSION["email"] = $email;
   } else {
     $password = $pass->crypt_pass($_POST['password']);
   }
@@ -43,6 +44,7 @@
 		} else {
       $_SESSION["form_errors"] = true;
       $_SESSION["password_error"] = "Invalid password";
+      $_SESSION["email"] = $email;
     }
 	}
 
