@@ -14,7 +14,7 @@
 		$email = $_POST['email'];
 	}
   else {
-    $_SESSION["email_error"] = "An email is required";
+    $_SESSION["email_error"] = "An email is required"
   }
 
 	if(isset($_POST['password']))
