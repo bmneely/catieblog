@@ -7,7 +7,7 @@
 
   session_start();
 
-  $_SESSION["form_errors"] = true;
+  $_SESSION["form_errors"] = false;
   $_SESSION["email_error"] = "";
   $_SESSION["password_error"] = "";
   $_SESSION["email"] = "";
