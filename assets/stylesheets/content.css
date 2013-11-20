@@ -110,17 +110,21 @@ html, body {
   margin-right: auto;
   margin-bottom: 25px;
   max-width: 90%;
+  border-radius: 15px;
 }
 
 .post-photos-small {
   max-width: 80%;
+  border-radius: 15px;
 }
 .post-photos-smaller {
   max-width: 70%;
+  border-radius: 15px;
 }
 
 .post-photos-smallest {
   max-width: 40%;
+  border-radius: 15px;
 }
 
 .bio-container {

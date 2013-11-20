@@ -20,24 +20,24 @@
     } 
   }
 
-  // if(empty($_POST["pasword"])) {
-  //   $_SESSION["form_errors"] = true;
-  //   $_SESSION["password_error"] = "A password is required";
-  // } else {
-  //   $password = $pass->crypt_pass($_POST['password']);
-  // }
+  if(empty($_POST["pasword"])) {
+    $_SESSION["form_errors"] = true;
+    $_SESSION["password_error"] = "A password is required";
+  } else {
+    $password = $pass->crypt_pass($_POST['password']);
+  }
 
 
-	if (!isset($_SESSION['form_errors'])){
-		$user = $dao->getUser($email);
+	// if (!isset($_SESSION['form_errors'])){
+	// 	$user = $dao->getUser($email);
     
-    if($pass->is_password_correct($user, $password)){
-			$_SESSION["name"] = user_name($user);
-		} else {
-      $_SESSION["form_errors"] = true;
-      $_SESSION["password_error"] = "Invalid password";
-    }
-	}
+ //    if($pass->is_password_correct($user, $password)){
+	// 		$_SESSION["name"] = user_name($user);
+	// 	} else {
+ //      $_SESSION["form_errors"] = true;
+ //      $_SESSION["password_error"] = "Invalid password";
+ //    }
+	// }
 
   function user_name($user) {
   	$user_name = "";
