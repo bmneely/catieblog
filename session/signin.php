@@ -8,6 +8,9 @@
 
 	$email = "";
 	$password = "";
+  $_SESSION["form_errors"] = "";
+  $_SESSION["email_error"] = "";
+  $_SESSION["password_error"] = "";
 
   if(empty($_POST["email"])) {
     $_SESSION["form_errors"] = true;
@@ -16,7 +19,7 @@
     $email = test_input($_POST["email"]);
     if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
       $_SESSION["form_errors"] = true;
-      $_SESSION["email_error"] = "Your email is invalid";
+      $_SESSION["email_error"] = "A valid email is invalid";
     } 
   }
 
