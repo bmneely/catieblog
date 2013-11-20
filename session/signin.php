@@ -37,6 +37,7 @@
     if(is_null($user)){
       $_SESSION["form_errors"] = true;
       $_SESSION["email_error"] = "Account not found";
+      $_SESSION["email"] = $email;
     } else if($pass->is_password_correct($user, "$password")){
 			$_SESSION["name"] = user_name($user);
 		} else {
