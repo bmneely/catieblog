@@ -4,13 +4,11 @@
 
   $dao = new Dao();
   $pass = new Pass();
+  session_destroy();
   session_start();
 
 	$email = "";
 	$password = "";
-  $_SESSION["form_errors"] = "";
-  $_SESSION["email_error"] = "";
-  $_SESSION["password_error"] = "";
 
   if(empty($_POST["email"])) {
     $_SESSION["form_errors"] = true;
