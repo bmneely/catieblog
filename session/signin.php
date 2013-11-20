@@ -4,6 +4,7 @@
 
   $dao = new Dao();
   $pass = new Pass();
+  session_start();
 
 	$email = "";
 	$password = "";
@@ -12,6 +13,9 @@
 	{
 		$email = $_POST['email'];
 	}
+  else {
+    $_SESSION["email_error"] = "An email is required";
+  }
 
 	if(isset($_POST['password']))
 	{
@@ -22,10 +26,7 @@
 	if ($email !== "" && $password !== ""){
 			$user = $dao->getUser($email);
     if($pass->is_password_correct($user, $password)){
-			session_start();
 			$_SESSION["name"] = user_name($user);
-      // $_SESSION["name"] = "Ben Neely";
-
 		}
 	}
 
