@@ -32,10 +32,9 @@
 		$user = $dao->getUser($email);
 
     if(is_null($user)){
-      echo "ljalsdjl";
-    }
-    
-    if($pass->is_password_correct($user, "$password")){
+      $_SESSION["form_errors"] = true;
+      $_SESSION["email_error"] = "Account not found";
+    } else  if($pass->is_password_correct($user, "$password")){
 			$_SESSION["name"] = user_name($user);
 		} else {
       $_SESSION["form_errors"] = true;
