@@ -163,5 +163,5 @@ input:-webkit-autofill:focus {
 }
 
 #show-me {
-  display:block!important;
+  display:block;
 }
