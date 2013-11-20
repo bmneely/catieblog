@@ -158,3 +158,9 @@ html, body {
   text-align: center;
   width: 80%;
 }
+
+.error {
+  color: #99050A;
+  padding-top: 0px;
+  font-size: .8em;
+}
