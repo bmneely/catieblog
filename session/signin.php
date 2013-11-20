@@ -36,7 +36,7 @@
     $password = $pass->crypt_pass($_POST['password']);
   }
 
-	if (!isset($_SESSION['form_errors']) || !$_SESSION['form_errors']){
+	if (!isset($_SESSION['password_error'])){
 		$user = $dao->getUser($email);
 
     if (is_null($user) ) {
@@ -85,6 +85,6 @@
   <h1> <?php echo  is_null($user); ?></h1>
   <h1> <?php echo  $_SESSION["email_error"]; ?></h1>
   <h1> <?php echo  $_SESSION["form_errors"]; ?></h1>
-  
+
 </body>
 </html>
