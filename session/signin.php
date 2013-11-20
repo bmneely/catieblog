@@ -14,10 +14,10 @@
     $_SESSION["email_error"] = "An email is required";
   } else {
     $email = test_input($_POST["email"])
-    if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
-      $_SESSION["form_errors"] = true;
-      $_SESSION["email_error"] = "Your email is invalid";
-    } 
+    // if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
+    //   $_SESSION["form_errors"] = true;
+    //   $_SESSION["email_error"] = "Your email is invalid";
+    // } 
   }
 
   // if(empty($_POST["pasword"])) {
