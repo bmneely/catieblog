@@ -28,7 +28,7 @@
     } 
   }
 
-  if(($_POST["password_error"]) === "") {
+  if(empty($_POST["password"])) {
     $_SESSION["form_errors"] = true;
     $_SESSION["password_error"] = "A password is required";
     $_SESSION["email"] = $email;
@@ -36,7 +36,7 @@
     $password = $pass->crypt_pass($_POST['password']);
   }
 
-	if (!isset($_SESSION['password_error'])){
+	if ($_SESSION["password_error"] === ""){
 		$user = $dao->getUser($email);
 
     if (is_null($user) ) {
