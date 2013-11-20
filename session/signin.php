@@ -32,7 +32,7 @@
 		$user = $dao->getUser($email);
 
     if(is_null($user)){
-      echo "ljalsdjl"
+      echo "ljalsdjl";
     }
     
     if($pass->is_password_correct($user, "$password")){
