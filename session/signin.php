@@ -28,18 +28,17 @@
   }
 
 
-	if ($email !== "" && $password !== ""){
-			$user = $dao->getUser($email);
-    if($pass->is_password_correct($user, $password)){
-			$_SESSION["name"] = user_name($user);
-		}
-    else {
-      $_SESSION["form_errors"] = true;
-      $_SESSION["password_error"] = "Invalid password";
-    }
-	}
+	// if ($email !== "" && $password !== ""){
+	// 		$user = $dao->getUser($email);
+ //    if($pass->is_password_correct($user, $password)){
+	// 		$_SESSION["name"] = user_name($user);
+	// 	} else {
+ //      $_SESSION["form_errors"] = true;
+ //      $_SESSION["password_error"] = "Invalid password";
+ //    }
+	// }
 
-  function user_name($user){
+  function user_name($user) {
   	$user_name = "";
   	if (is_null($user["first_name"]) || $user["first_name"] === ""){
   		if (is_null($user["last_name"]) || $user["last_name"] === ""){
@@ -53,8 +52,7 @@
   	return $user_name;
   }
 
-  function test_input($data)
-  {
+  function test_input($data) {
      $data = trim($data);
      $data = stripslashes($data);
      $data = htmlspecialchars($data);
