@@ -162,6 +162,6 @@ input:-webkit-autofill:focus {
   padding-right: 50px;
 }
 
-#fshow-me {
-    display: block;
+#show-me {
+  display:block!important;
 }
