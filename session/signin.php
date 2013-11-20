@@ -39,7 +39,7 @@
 	if ($_SESSION["password_error"] === ""){
 		$user = $dao->getUser($email);
 
-    if ($user === "" ) {
+    if ($user === null) {
       $_SESSION["form_errors"] = true;
       $_SESSION["email_error"] = "Account not found";
       $_SESSION["email"] = $email;
