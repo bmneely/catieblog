@@ -5,9 +5,13 @@
   $dao = new Dao();
   $pass = new Pass();
 
-  // session_unset();
-  // session_destroy();
   session_start();
+
+  $_SESSION["form_errors"] = true;
+  $_SESSION["email_error"] = "";
+  $_SESSION["password_error"] = "";
+  $_SESSION["email"] = "";
+
 
 	$email = "";
 	$password = "";
@@ -32,7 +36,7 @@
     $password = $pass->crypt_pass($_POST['password']);
   }
 
-	if (!isset($_SESSION['form_errors'])){
+	if (!isset($_SESSION['form_errors']) && $_SESSION['form_errors']){
 		$user = $dao->getUser($email);
 
     if(is_null($user)){
