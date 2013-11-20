@@ -20,12 +20,12 @@
     } 
   }
 
-  if(empty($_POST["pasword"])) {
-    $_SESSION["form_errors"] = true;
-    $_SESSION["password_error"] = "A password is required";
-  } else {
-    $password = $pass->crypt_pass($_POST['password']);
-  }
+  // if(empty($_POST["pasword"])) {
+  //   $_SESSION["form_errors"] = true;
+  //   $_SESSION["password_error"] = "A password is required";
+  // } else {
+  //   $password = $pass->crypt_pass($_POST['password']);
+  // }
 
 
 	// if (!isset($_SESSION['form_errors'])){
