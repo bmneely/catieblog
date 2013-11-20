@@ -76,6 +76,7 @@
 </head>
 <body>
   <h1>  <?php echo "User!!!!"; ?> </h1>
+  <h1>  <?php echo $user; ?> </h1>
 
   <h1>  <?php echo is_null($user); ?> </h1>
 </body>
