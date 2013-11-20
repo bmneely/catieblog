@@ -125,7 +125,7 @@ input {
   height: 2.5em;
   font-size: .8em;
 }
-
+f
 label {
   display: block;
 }
@@ -160,4 +160,8 @@ input:-webkit-autofill:focus {
 
 .sign-up-label  {
   padding-right: 50px;
+}
+
+#fshow-me {
+    display: block;
 }

@@ -1,4 +1,4 @@
-<div class='sign-in'>
+<div class="sign-in <?php if(isset['form_errors']) { echo '#show-me';} ?>">
   <div>
     <a class="close-icon" href="#" onclick="toggleSignIn()">&#10006;</a>
     <br>
