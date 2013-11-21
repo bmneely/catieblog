@@ -13,8 +13,6 @@
       echo $comment["user_id"];
       echo "</div></div>";
     }
-
-    echo "\nKKKKLJLKJ\n";
   ?>
 </div>
 

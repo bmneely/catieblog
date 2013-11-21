@@ -9,7 +9,7 @@
   $content = clean_input($_POST["content"]);
 
 
-  $dao->saveComment ($comment_date, $user_id, $post_id, $content);
+  // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
   function clean_input($data) {
     $data = trim($data);
