@@ -24,8 +24,16 @@ class Dao {
     $q = $conn->prepare($getQuery);
     $q->bindParam(":email", $email);
     $query->execute(); 
+
     $rows = $query->fetchColumn(); 
-    return ($rows === 1);
+
+    if($rows == 1){ 
+      return true; 
+    }else{ 
+      return false; 
+    } 
+
+    // return ($rows === 1);
   }
 
   public function getUser ($email) {
