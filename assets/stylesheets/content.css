@@ -166,5 +166,6 @@ html, body {
 .error {
   color: #99050A;
   padding-top: 0px;
+  padding-bottom: 5px;
   font-size: .8em;
 }

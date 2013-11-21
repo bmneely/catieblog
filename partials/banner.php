@@ -28,17 +28,8 @@
 
   <?php include("session/sign-in-form.php") ?>
 
-  <div class="sign-up">
-      <a class="close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
-      <br>
-      <form class="sign-up-form" action="../session/signup.php" method="post">
-        <label><span class="sign-up-label">First Name</span><input type="text" name="first" /></label><br/>
-        <label><span class="sign-up-label">Last Name</span><input type="text" name="last" /></label><br/>
-        <label><span class="sign-up-label">Email</span><input type="text" name="email" /></label><br/>
-        <label><span class="sign-up-label">Password</span><input type="password" name="password" /></label>
-        <input class="submit" type="submit" value="Sign up" />
-      </form>
-  </div>
+  <?php include("session/sign-up-form.php") ?>
+
   <div class="clear"></div>
 </div>
 <div class="clear"></div>
