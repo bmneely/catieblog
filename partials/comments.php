@@ -5,28 +5,19 @@
   I am right here!<br>
 
   <?php
-    echo "test1\n";
-
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";
-    
-    echo "test2\n";
-
-    $dao = new Dao();
-
-    echo "test3\n";
-
-    echo var_dump($dao);
-    
-    echo "\ntest4\n";
-    
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";    
     $comments = $dao->getComments($post_id);
 
-    // echo var_dump($comments);
-    // echo $comments;
-    echo "\ntest5\n";
-  
+    foreach ($comments as $comment) {
+      echo "<div class='comment-content'>";
+      echo $comment["content"];
+      echo "<div class='comment-user'>";
+      echo $comment["user_id"];
+      echo "</div></div>";
+    }
   ?>
 </div>
+
 
 <div>
   <?php include("comment-form.php") ?>
