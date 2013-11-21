@@ -8,7 +8,6 @@
   $user_id = $user["id"];
   $content = clean_input($_POST["content"]);
 
-
   // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
   function clean_input($data) {
@@ -22,8 +21,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=<?php echo $_SERVER['HTTP_REFERER']; ?>" />
+  <!-- <meta http-equiv="refresh" content="0; url=<?php echo $_SERVER['HTTP_REFERER']; ?>" /> -->
 </head>
 <body>
+  <?php
+    echo $comment_date;
+    echo $user_id;
+    echo $post_id;
+    echo $content;
+    ?>
 </body>
 </html>
