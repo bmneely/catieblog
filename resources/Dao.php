@@ -70,18 +70,18 @@ class Dao {
   }
 
   public function getComments ($post_id) {
-    // $conn = $this->getConnection();
-    // // $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
+    $conn = $this->getConnection();
+    $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
     
     // $getQuery = "SELECT * FROM comment";
 
-    // $q = $conn->prepare($getQuery);
-    // // $q->bindParam(":post_id", $post_id);
-    // $q->execute();
-    // return reset($q->fetchAll());
+    $q = $conn->prepare($getQuery);
+    $q->bindParam(":post_id", $post_id);
+    $q->execute();
+    return reset($q->fetchAll());
 
-        $conn = $this->getConnection();
-      return $conn->query("SELECT * FROM comment");
+        // $conn = $this->getConnection();
+      // return $conn->query("SELECT * FROM comment");
 
   }
 }
