@@ -193,6 +193,12 @@ html, body {
   float: right;
 }
 
+input.submit-commit:hover {
+  background:#fff;
+  color:#778899;
+  cursor: pointer;  
+}
+
 .comment-content {
   font-size: 1.2em;
   border: dotted 1px;
@@ -204,4 +210,8 @@ html, body {
 .comment-user{
   text-align: right;
   font-size: 1.1em;
+}
+
+textarea#text-area {
+  background-color: blue;
 }

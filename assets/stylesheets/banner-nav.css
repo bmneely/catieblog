@@ -138,7 +138,7 @@ input.submit {
   border: none;
 } 
 
-input.submit:hover, .submit-comment {
+input.submit:hover {
   background:#fff;
   color:#778899;
   cursor: pointer;  
