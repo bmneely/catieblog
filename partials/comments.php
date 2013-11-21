@@ -13,9 +13,11 @@
   ads
   as
   <?php
+    $dao = new Dao();
+
     echo "string";
     $comments = $dao->getComments($post_id);
-    echo var_dump($comments);
+    // echo var_dump($comments);
     // echo $comments;
   ?>
 </div>
