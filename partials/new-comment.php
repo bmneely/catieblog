@@ -9,10 +9,6 @@
   $content = $_POST["content"];
   $post_id = $_POST["post_id"];
 
-    // echo $_SESSION["email"];
-    // echo $user;
-    // echo $user_id;
-
   $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
   function clean_input($data) {
@@ -22,3 +18,13 @@
     return $data;
   }
 ?>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0; url=<?php echo $_SERVER['HTTP_REFERER']; ?>" />
+</head>
+<body>
+</body>
+</html>
