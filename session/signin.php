@@ -1,6 +1,6 @@
 <?php
-  require_once "../resources/Dao.php";
-  require_once "../resources/Pass.php";
+  require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";
+  require_once $_SERVER['DOCUMENT_ROOT'] . "../resources/Pass.php";
 
   $dao = new Dao();
   $pass = new Pass();

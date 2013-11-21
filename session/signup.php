@@ -1,7 +1,7 @@
 <?php
-  require_once "../resources/Dao.php";
-  require_once "../resources/Pass.php";
-  require '../vendor/autoload.php';
+  require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";
+  require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Pass.php";
+  require $_SERVER['DOCUMENT_ROOT'] . '/vendor/autoload.php';
   use Mailgun\Mailgun;
 
   $dao = new Dao();
