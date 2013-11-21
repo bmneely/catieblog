@@ -184,6 +184,10 @@ html, body {
   width: 100%;
 }
 
+.submit-commit {
+  text-align: right;
+}
+
 .comment-content {
   font-size: 1.2em;
   border: dotted 1px;
