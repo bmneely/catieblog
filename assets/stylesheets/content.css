@@ -212,6 +212,6 @@ input.submit-commit:hover {
   font-size: 1.1em;
 }
 
-textarea#text-area {
+textarea#styled {
   background-color: blue;
 }
