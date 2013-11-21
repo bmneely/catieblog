@@ -10,6 +10,7 @@
   $user_id = $user["id"];
     // echo $user_id;
   $content = $_POST["content"];
+    echo $comment_date;
     echo $content;
     echo "!!!!!!!!!!!!";
 
