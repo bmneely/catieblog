@@ -10,8 +10,8 @@
   as
   <?php
     echo "string";
-    $comments = $dao->getComments($post_id);
-    echo $comments;
+    // $comments = $dao->getComments($post_id);
+    // echo $comments;
   ?>
 </div>
 
