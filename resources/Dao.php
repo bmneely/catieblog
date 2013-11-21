@@ -53,21 +53,21 @@ class Dao {
       $q->execute();
   }
 
-  public function saveComment ($comment_date, $user_id, $post_id, $content, ) {
-    $conn = $this->getConnection();
-    $saveQuery =
-    "INSERT INTO comment
-    (comment_date, user_id, post_id, content)
-    VALUES
-    (:omment_date, :user_id, :post_id, :content)";
+  // public function saveComment ($comment_date, $user_id, $post_id, $content, ) {
+  //   $conn = $this->getConnection();
+  //   $saveQuery =
+  //   "INSERT INTO comment
+  //   (comment_date, user_id, post_id, content)
+  //   VALUES
+  //   (:omment_date, :user_id, :post_id, :content)";
 
-    $q = $conn->prepare($saveQuery);
-    $q->bindParam(":omment_date", $omment_date);
-    $q->bindParam(":user_id", $user_id);
-    $q->bindParam(":post_id", $post_id);
-    $q->bindParam(":content", $content);
-    $q->execute();
-  }
+  //   $q = $conn->prepare($saveQuery);
+  //   $q->bindParam(":omment_date", $omment_date);
+  //   $q->bindParam(":user_id", $user_id);
+  //   $q->bindParam(":post_id", $post_id);
+  //   $q->bindParam(":content", $content);
+  //   $q->execute();
+  // }
 
   // public function getComments ($post_id) {
   //   $conn = $this->getConnection();
