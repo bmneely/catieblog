@@ -1,5 +1,8 @@
 <div class="comments">
-  <h1>Comments</h1>
+  <h2>Comments</h2>
+
+
+
   afsd
   sadafdsfads
 
@@ -11,7 +14,8 @@
   as
   <?php
     echo "string";
-    // $comments = $dao->getComments($post_id);
+    $comments = $dao->getComments($post_id);
+    echo var_dump($comments);
     // echo $comments;
   ?>
 </div>
