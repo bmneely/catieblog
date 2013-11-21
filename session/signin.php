@@ -72,8 +72,10 @@
      $data = htmlspecialchars($data);
      return $data;
   }
-?>
+  header("location:javascript://history.go(-1)");
 
+?>
+<!-- 
 <!doctype html>
 <html lang="en">
 <head>
@@ -81,10 +83,5 @@
   <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
 </head>
 <body>
-  <h1> <?php echo $user; ?></h1>
-  <h1> <?php echo  "user is null " . is_null($user); ?></h1>
-  <h1> <?php echo  "user error " . $_SESSION["email_error"]; ?></h1>
-  <h1> <?php echo  "form errors " . $_SESSION["form_errors"]; ?></h1>
-
 </body>
-</html>
+</html> -->
