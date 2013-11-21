@@ -27,6 +27,15 @@ class Dao {
     return reset($q->fetchAll());
   }
 
+  public function getUserById ($id) {
+    $conn = $this->getConnection();
+    $getQuery = "SELECT * FROM user WHERE id = :id";
+    $q = $conn->prepare($getQuery);
+    $q->bindParam(":id", $id);
+    $q->execute();
+    return reset($q->fetchAll());
+  }
+
   public function saveUser ($first, $last, $email, $pass, $role) {
     $conn = $this->getConnection();
     $saveQuery =
@@ -40,24 +49,32 @@ class Dao {
       $q->bindParam(":last", $last);
       $q->bindParam(":email", $email);
       $q->bindParam(":pass", $pass);
-      $q->bindParam(":role", $role);
+      $q->bindParam(":role", $role); 
       $q->execute();
   }
 
-  public function saveComment ($comment) {
+  public function saveComment ($comment_date, $user_id, $post_id, $content, ) {
     $conn = $this->getConnection();
     $saveQuery =
-        "INSERT INTO comment
-        (comment)
-        VALUES
-        (:comment)";
+    "INSERT INTO comment
+    (comment_date, user_id, post_id, content)
+    VALUES
+    (:omment_date, :user_id, :post_id, :content)";
+
     $q = $conn->prepare($saveQuery);
-    $q->bindParam(":comment", $comment);
+    $q->bindParam(":omment_date", $omment_date);
+    $q->bindParam(":user_id", $user_id);
+    $q->bindParam(":post_id", $post_id);
+    $q->bindParam(":content", $content);
     $q->execute();
   }
 
-  public function getComments () {
+  public function getComments ($post_id) {
     $conn = $this->getConnection();
-    return $conn->query("SELECT * FROM comment");
+    $getQuery = "SELECT * FROM comment WHERE post_id = :email";
+    $q = $conn->prepare($getQuery);
+    $q->bindParam(":post_id", $post_id);
+    $q->execute();
+    return reset($q->fetchAll());
   }
 }

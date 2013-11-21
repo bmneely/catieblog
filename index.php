@@ -1,23 +1,4 @@
 <?php $page = "blog" ?>
-
-<?php
-  require_once "resources/Dao.php";
-  $dao = new Dao();
-
-  // require 'vendor/autoload.php';
-  // use Mailgun\Mailgun;
-
-  // $mg = new Mailgun("key-0qc796hgz3c1ke5wt4rw58ysavrbk0o9");
-  // $domain = "cricketandbea.com";
-
-  // $mg->sendMessage($domain, array('from'    => 'ben@example.com', 
-  //                               'to'      => 'thegreen101331@gmail.com', 
-  //                               'subject' => "Fuck Sendgrid, it's a bitch, MailGun rules!", 
-  //                               'text'    => 'I appologize for the 160 messages you are going to get before I turn this off, but it was so worth it.'));
-
-
-?>
-
 <!DOCTYPE html> 
 <html>
   <?php include("partials/head.php") ?>

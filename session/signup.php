@@ -53,7 +53,7 @@
         'from'    => 'cricketandbea@gmail.com', 
         'to'      => $email, 
         'subject' => "Welcome to Cricket and Bea", 
-        'html'    => '<h1>Hello!</h1> Welcome to my blog. Thank you for your interest I hope you enjoy what you read! -Catie'));
+        'html'    => '<h3>Welcome to Cricket and Bea!</h3><p>Thank you for your interest in my blog. I hope you enjoy what you read. Please feel free to comment or email me, I would love to hear from you.</p><p>Catie</p>'));
 
     } else {
       $_SESSION["sign_up_form_errors"] = true;
