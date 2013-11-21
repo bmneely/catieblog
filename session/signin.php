@@ -72,10 +72,8 @@
      $data = htmlspecialchars($data);
      return $data;
   }
-  header("location:javascript://history.go(-1)");
-
 ?>
-<!-- 
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -83,5 +81,7 @@
   <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
 </head>
 <body>
+  <h1> <?php echo  $_SERVER['HTTP_REFERER']; ?></h1>
+
 </body>
-</html> -->
+</html>
