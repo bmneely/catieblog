@@ -16,6 +16,5 @@
 </div>
 
 <div>
-  <br>kkkkkkkkkkkkkkkkkkkkkk
   <?php include("comment-form.php") ?>
 </div>

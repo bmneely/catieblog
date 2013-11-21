@@ -1,7 +1,6 @@
 <div class="comment-form">
-  <br>TTTTTTTTTTTTTTTTTTTTTT
-  <form class="sign-up-form" action="comment-form.php" method="post">
-    <label><input type="text" name="content" /></label><br/>/label>
-    <input class="submit" type="submit" value="Sign up" />
+  <form class="commment-form" action="comment-form.php" method="post">
+    <input type="text" name="content" /><br/>
+    <input class="submit" type="submit" value="Submit Comment" />
   </form>
 </div>
