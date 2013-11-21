@@ -26,14 +26,7 @@ class Dao {
     $query->execute(); 
 
     $rows = $query->fetchColumn(); 
-
-    if($rows == 1){ 
-      return true; 
-    }else{ 
-      return false; 
-    } 
-
-    // return ($rows === 1);
+    return ($rows == 1);
   }
 
   public function getUser ($email) {
