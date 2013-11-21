@@ -9,6 +9,7 @@
   ads
   as
   <?php
+    echo "string";
     $comments = $dao->getComments($post_id);
     echo $comments;
   ?>
