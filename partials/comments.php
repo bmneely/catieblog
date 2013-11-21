@@ -6,6 +6,8 @@
     $dao = new Dao();
     $comments = $dao->getComments($post_id);
 
+    echo var_dump($comments);
+    
     foreach ($comments as $comment) {
       echo "<div class='comment-content'>";
       echo $comment["content"];
