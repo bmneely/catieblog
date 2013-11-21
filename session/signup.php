@@ -41,11 +41,11 @@
   if (!$_SESSION["sign_up_form_errors"]){
     $user = $dao->getUser($email);
 
-    if (!is_null($user["email"])) {
-      $dao->saveUser($first, $last, $email, $password, $role);
-    } else {
+    if (is_null($user["email"])) {
       $_SESSION["sign_up_form_errors"] = true;
       $_SESSION["sign_up_email_error"] = "This email address already exists";
+    } else {
+      $dao->saveUser($first, $last, $email, $password, $role);
     }
   }
 
