@@ -36,8 +36,8 @@
             <p>I also started a quilt today!  And if all goes well, I will share pictures soon.  For now, there are enchiladas cooling on the counter and I am HUNGRY!</p>
           
           </div>
+          <?php include("../../partials/comments.php") ?>
         </div>
-        <?php include("../../partials/comments.php") ?>
       </div>
     <?php include("../../partials/footer.php") ?>
     </div>
