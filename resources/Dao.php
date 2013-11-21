@@ -70,11 +70,11 @@ class Dao {
 
   public function getComments ($post_id) {
     $conn = $this->getConnection();
-    // $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
-    // $q = $conn->prepare($getQuery);
-    // $q->bindParam(":post_id", $post_id);
-    return $conn->query("SELECT * FROM comment");
-    // return $q->execute();
-    // return reset($q->fetchAll());
+    $getQuery = "SELECT user_id, content FROM comment WHERE post_id = :post_id";
+    $q = $conn->prepare($getQuery);
+    $q->bindParam(":post_id", $post_id);
+    $q->execute();
+    return $q->fetchAll();
+    // return $conn->query("SELECT * FROM comment");
   }
 }

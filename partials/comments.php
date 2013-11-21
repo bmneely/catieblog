@@ -6,8 +6,6 @@
     $dao = new Dao();
     $comments = $dao->getComments($post_id);
 
-    echo $post_id;
-
     foreach ($comments as $comment) {
       $user = $dao->getUserById($comment["user_id"]);
 
