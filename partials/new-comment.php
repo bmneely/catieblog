@@ -11,6 +11,7 @@
     // echo $user_id;
   $content = $_POST["content"];
     echo $content;
+    echo "!!!!!!!!!!!!";
 
   // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
