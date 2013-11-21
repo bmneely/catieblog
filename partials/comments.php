@@ -7,7 +7,7 @@
   <?php
     echo "test1\n";
 
-    require_once "/resources/Dao.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";
     
     echo "test2\n";
 
