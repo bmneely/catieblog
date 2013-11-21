@@ -9,11 +9,8 @@
   ads
   as
   <?php
-    $user = $dao->getComments($post_id);
-    echo "<table>";
-    echo "<tr>";
-    echo "</tr>";
-    echo "</table>";
+    $comments = $dao->getComments($post_id);
+    echo $comments;
   ?>
 </div>
 
