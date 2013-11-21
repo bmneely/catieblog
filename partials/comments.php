@@ -38,6 +38,6 @@
     include("comment-form.php");
   echo "</div>";
   } else {
-    echo "Please sign in to leave a comment.";
+    echo "Please log in to leave a comment.";
   }
 ?>
