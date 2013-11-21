@@ -8,10 +8,10 @@
   $user_id = $user["id"];
   $content = $_POST["content"];
   $post_id = $_POST["post_id"];
-    echo $content;
-    echo $post_id;
+
+    echo $_SESSION["email"];
+    echo $user;
     echo $user_id;
-    echo "!!!!!!!!!!!!";
 
   // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
