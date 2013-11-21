@@ -8,7 +8,7 @@
   $user_id = $user["id"];
   $content = $_POST["content"];
     echo $content;
-    echo $post_id
+    // echo $post_id
     // echo $user_id
     echo "!!!!!!!!!!!!";
 
