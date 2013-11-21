@@ -71,7 +71,7 @@ class Dao {
 
   public function getComments ($post_id) {
     $conn = $this->getConnection();
-    $getQuery = "SELECT * FROM comment WHERE post_id = :email";
+    $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
     $q = $conn->prepare($getQuery);
     $q->bindParam(":post_id", $post_id);
     $q->execute();
