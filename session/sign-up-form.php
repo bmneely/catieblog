@@ -1,4 +1,4 @@
-<div class="sign-up" id="<?php if(isset($_SESSION['sign_up_form_errors']) && $_SESSION['form_errors']) { echo 'show-me';} ?>">
+<div class="sign-up" id="<?php if(isset($_SESSION['sign_up_form_errors']) && $_SESSION['sign_up_form_errors']) { echo 'show-me';} ?>">
   <a class="close-icon" href="#" onclick="toggleSignUp()">&#10006;</a>
   <br>
   <form class="sign-up-form" action="../session/signup.php" method="post">
