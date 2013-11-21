@@ -77,6 +77,7 @@ class Dao {
 
     $q = $conn->prepare($getQuery);
     // $q->bindParam(":post_id", $post_id);
-    return $q->execute();
+    $q->execute();
+    return reset($q->fetchAll());
   }
 }
