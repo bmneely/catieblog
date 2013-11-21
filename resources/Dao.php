@@ -75,6 +75,5 @@ class Dao {
     $q->bindParam(":post_id", $post_id);
     $q->execute();
     return $q->fetchAll();
-    // return $conn->query("SELECT * FROM comment");
   }
 }

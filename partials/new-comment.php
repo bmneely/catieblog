@@ -6,7 +6,7 @@
   $comment_date = new DateTime("now", new DateTimeZone('America/Denver')); 
   $user = $dao->getUser($_SESSION["email"]);
   $user_id = $user["id"];
-  $content = $_POST["content"];
+  $content = clean_input($_POST["content"]);
   $post_id = $_POST["post_id"];
 
   $dao->saveComment ($comment_date, $user_id, $post_id, $content);
