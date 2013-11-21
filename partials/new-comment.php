@@ -7,7 +7,7 @@
   $user = $dao->getUser($_SESSION["email"]);
   $user_id = $user["id"];
   $content = $_POST["content"];
-  $post_id =$_POST["post_id"]
+  $post_id = $_POST["post_id"];
     echo $content;
     echo $post_id
     // echo $user_id
@@ -22,5 +22,3 @@
     return $data;
   }
 ?>
-
-JJJJJJKKKKKKKK
