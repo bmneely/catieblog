@@ -183,3 +183,11 @@ html, body {
 .text-area {
   width: 100%;
 }
+
+.comment-content {
+  font: 2em;
+}
+
+.comment-user{
+  float: right;
+}
