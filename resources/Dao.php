@@ -77,8 +77,8 @@ class Dao {
 
     $q = $conn->prepare($getQuery);
     $q->bindParam(":post_id", $post_id);
-    $q->execute();
-    return reset($q->fetchAll());
+    return $q->execute();
+    // return reset($q->fetchAll());
 
         // $conn = $this->getConnection();
       // return $conn->query("SELECT * FROM comment");
