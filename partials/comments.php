@@ -1,4 +1,13 @@
 <div class="comments">
+  afsd
+  sadafdsfads
+
+  sdf
+  fads
+  af
+  afd
+  ads
+  as
   <?php
     $user = $dao->getComments($post_id);
     echo "<table>";
