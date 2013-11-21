@@ -1,5 +1,5 @@
 <div class="comments">
-  <h3>Comments</h3>
+  <h1>Comments</h1>
   afsd
   sadafdsfads
 
