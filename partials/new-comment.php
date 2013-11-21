@@ -3,15 +3,13 @@
   require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";
   $dao = new Dao();
 
-    // echo $post_id;
-  $comment_date = new DateTime('now');
-  // echo $comment_date;
+  $comment_date = new DateTime("now", new DateTimeZone('America/Denver')); 
   $user = $dao->getUser($_SESSION["email"]);
   $user_id = $user["id"];
-    // echo $user_id;
   $content = $_POST["content"];
-    echo $comment_date;
     echo $content;
+    echo $post_id
+    echo $user_id
     echo "!!!!!!!!!!!!";
 
   // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
