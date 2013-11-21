@@ -17,13 +17,13 @@
 
     echo var_dump($dao);
     
-    echo "test4\n";
+    echo "\ntest4\n";
     
     $comments = $dao->getComments($post_id);
 
     // echo var_dump($comments);
     // echo $comments;
-    echo "test5\n";
+    echo "\ntest5\n";
   
   ?>
 </div>
