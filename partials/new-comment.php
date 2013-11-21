@@ -3,7 +3,7 @@
   require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";
   $dao = new Dao();
 
-    echo $post_id;
+    // echo $post_id;
   $comment_date = new DateTime('now');
   echo $comment_date;
   $user = $dao->getUser($_SESSION["email"]);
