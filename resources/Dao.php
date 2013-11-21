@@ -62,7 +62,6 @@ class Dao {
     (:user_id, :post_id, :content)";
 
     $q = $conn->prepare($saveQuery);
-    // $q->bindParam(":comment_date", $comment_date);
     $q->bindParam(":user_id", $user_id);
     $q->bindParam(":post_id", $post_id);
     $q->bindParam(":content", $content);
@@ -71,14 +70,11 @@ class Dao {
 
   public function getComments ($post_id) {
     $conn = $this->getConnection();
-    $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
-    $q = $conn->prepare($getQuery);
-    $q->bindParam(":post_id", $post_id);
-    return $q->execute();
+    // $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
+    // $q = $conn->prepare($getQuery);
+    // $q->bindParam(":post_id", $post_id);
+    return $conn->query("SELECT * FROM comment");
+    // return $q->execute();
     // return reset($q->fetchAll());
-
-        // $conn = $this->getConnection();
-      // return $conn->query("SELECT * FROM comment");
-
   }
 }
