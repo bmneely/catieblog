@@ -27,14 +27,14 @@ class Dao {
     return reset($q->fetchAll());
   }
 
-  public function getUserById ($id) {
-    $conn = $this->getConnection();
-    $getQuery = "SELECT * FROM user WHERE id = :id";
-    $q = $conn->prepare($getQuery);
-    $q->bindParam(":id", $id);
-    $q->execute();
-    return reset($q->fetchAll());
-  }
+  // public function getUserById ($id) {
+  //   $conn = $this->getConnection();
+  //   $getQuery = "SELECT * FROM user WHERE id = :id";
+  //   $q = $conn->prepare($getQuery);
+  //   $q->bindParam(":id", $id);
+  //   $q->execute();
+  //   return reset($q->fetchAll());
+  // }
 
   public function saveUser ($first, $last, $email, $pass, $role) {
     $conn = $this->getConnection();
@@ -69,11 +69,11 @@ class Dao {
     $q->execute();
   }
 
-  public function getComments ($post_id) {
-    $conn = $this->getConnection();
-    $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
-    $q = $conn->prepare($getQuery);
-    $q->bindParam(":post_id", $post_id);
-    return $q->execute();
-  }
+  // public function getComments ($post_id) {
+  //   $conn = $this->getConnection();
+  //   $getQuery = "SELECT * FROM comment WHERE post_id = :post_id";
+  //   $q = $conn->prepare($getQuery);
+  //   $q->bindParam(":post_id", $post_id);
+  //   return $q->execute();
+  // }
 }
