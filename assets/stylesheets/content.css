@@ -185,9 +185,14 @@ html, body {
 }
 
 .comment-content {
-  font: 2em;
+  font-size: 1.2em;
+  border: dotted 1px;
+  margin-bottom: 15px;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 .comment-user{
-  float: right;
+  text-align: right;
+  font-size: 1.1em;
 }
