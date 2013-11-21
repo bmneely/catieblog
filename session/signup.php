@@ -5,52 +5,63 @@
   $dao = new Dao();
   $pass = new Pass();
 
-	$email = $_POST['email'];
-	$first = $_POST['first'];
-	$last = $_POST['last'];
-	$hashed_password = $pass->crypt_pass($_POST['password']);
+  session_start();
+
+  $_SESSION["sign_up_form_errors"] = false;
+  $_SESSION["sign_up_email_error"] = "";
+  $_SESSION["sign_up_password_error"] = "";
+
+	$first = clean_input($_POST['first']);
+  $_SESSION["first_name"] = $first;
+	$last = clean_input($_POST['last']);
+  $_SESSION["last_name"] = $last;
 	$role = "USER";
 
-	$dao->saveUser($first, $last, $email, $hashed_password, $role);
 
+  if(empty($_POST["email"])) {
+    $_SESSION["sign_up_form_errors"] = true;
+    $_SESSION["sign_up_email_error"] = "An email is required";
+  } else {
+    $email = clean_input($_POST["email"]);
+    if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
+      $_SESSION["sign_up_form_errors"] = true;
+      $_SESSION["sign_up_email_error"] = "A valid email is required";
+      $_SESSION["email"] = $email;
+    } 
+  }
 
-	// if ($email !== "" && $pass !== ""){
-	// 		$user = $dao->getUser($email);
- //    if(is_password_correct($user, $email, $pass)){
-	// 		session_start();
-	// 		$_SESSION["name"] = user_name($user);
-	// 	}
-	// }
+  if(empty($_POST["password"])) {
+    $_SESSION["sign_up_form_errors"] = true;
+    $_SESSION["sign_up_password_error"] = "A password is required";
+    $_SESSION["email"] = $email;
+  } else {
+    $password = $pass->crypt_pass($_POST['password']);
+  }
 
- //  function is_password_correct($user, $email, $password){
- // 		if ($user["password"] === $password){
- // 			return TRUE;
- // 		} else {
- // 	  	return FALSE;
- //    }
- //  }
+  if (!$_SESSION["sign_up_form_errors"]){
+    $user = $dao->getUser($email);
 
- //  function user_name($user){
- //  	$user_name = "";
- //  	if (is_null($user["first_name"]) || $user["first_name"] === ""){
- //  		if (is_null($user["last_name"])|| $user["last_name"] === ""){
- //  			$user_name = $user["email"];
- //  		} else {
- //  			$user_name = ucwords($user["last_name"]);
- //  		}
- //  	}
- //  	else {
- //  		$user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
- //  	}
- //  	return $user_name;
- //  }
+    if (!is_null($user["email"])) {
+      $dao->saveUser($first, $last, $email, $password, $role);
+    } else {
+      $_SESSION["sign_up_form_errors"] = true;
+      $_SESSION["sign_up_email_error"] = "This email address already exists";
+    }
+  }
+
+  function clean_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
 ?>
 
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=http://www.cricketandbea.com/" />
+  <meta http-equiv="refresh" content="0; url=<?php echo $_SERVER['HTTP_REFERER']; ?>" />
 </head>
 <body>
   <h1>

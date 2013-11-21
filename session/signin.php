@@ -20,7 +20,7 @@
     $_SESSION["form_errors"] = true;
     $_SESSION["email_error"] = "An email is required";
   } else {
-    $email = test_input($_POST["email"]);
+    $email = clean_input($_POST["email"]);
     if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/",$email)) {
       $_SESSION["form_errors"] = true;
       $_SESSION["email_error"] = "A valid email is required";
@@ -66,11 +66,11 @@
   	return $user_name;
   }
 
-  function test_input($data) {
-     $data = trim($data);
-     $data = stripslashes($data);
-     $data = htmlspecialchars($data);
-     return $data;
+  function clean_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
   }
 ?>
 

@@ -18,7 +18,7 @@
 
 ?>
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
   <?php include("partials/head.php") ?>
 <body>
@@ -114,19 +114,6 @@
       </div>
       <div class="clear"></div>
     </div>
-
-
-    <?php
-    $user = $dao->getUser("bmneely@gmail.com");
-    echo "<table>";
-      echo "<tr>";
-      echo "<td>" . $user["email"] . "</td>";
-      echo "</tr>";
-    echo "</table>";
-    ?>
-
-
-
     <?php include("partials/footer.php") ?>
   </div>
 </html>
