@@ -6,17 +6,17 @@
   $comment_date = new DateTime('now');
   $user = $dao->getUser($_SESSION["email"]);
   $user_id = $user["id"];
-  // $content = clean_input($_POST["content"]);
+  $content = clean_input($_POST["content"]);
 
 
-  // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
+  $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
-  // function clean_input($data) {
-  //   $data = trim($data);
-  //   $data = stripslashes($data);
-  //   $data = htmlspecialchars($data);
-  //   return $data;
-  // }
+  function clean_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+  }
 ?>
 <!doctype html>
 <html lang="en">
