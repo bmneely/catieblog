@@ -9,7 +9,7 @@
   $user = $dao->getUser($_SESSION["email"]);
   $user_id = $user["id"];
     // echo $user_id;
-  $content = clean_input($_POST["content"]);
+  $content = $_POST["content"];
     echo $content;
 
   // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
@@ -22,4 +22,4 @@
   }
 ?>
 
-lasdjfl;kasdfj;l asd;j;ladfsj;lfdaj;ladfsj;fadsj; adfjls
+JJJJJJKKKKKKKK
