@@ -4,7 +4,7 @@
   $dao = new Dao();
 
   $comment_date = new DateTime('now');
-  // $user_id = $dao->getUser($_SESSION["email"])["id"];
+  $user_id = $dao->getUser($_SESSION["email"])["id"];
   // $content = clean_input($_POST["content"]);
 
 
