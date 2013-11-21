@@ -35,7 +35,7 @@
             <p>Looks yummy, eh?  I know, not so much.  Turns out sometimes gluten really IS good for something, like keeping funnel cakes together in hot oil.  But, trust me, it really did taste delicious!</p>
             <p>I also started a quilt today!  And if all goes well, I will share pictures soon.  For now, there are enchiladas cooling on the counter and I am HUNGRY!</p>
           
-          <?php require("../../partials/comments.php") ?>
+          <?php include("../../partials/comments.php") ?>
           </div>
         </div>
       </div>
