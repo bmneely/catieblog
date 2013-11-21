@@ -9,11 +9,11 @@
   $content = $_POST["content"];
   $post_id = $_POST["post_id"];
 
-    echo $_SESSION["email"];
-    echo $user;
-    echo $user_id;
+    // echo $_SESSION["email"];
+    // echo $user;
+    // echo $user_id;
 
-  // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
+  $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
   function clean_input($data) {
     $data = trim($data);
