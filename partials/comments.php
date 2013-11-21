@@ -18,7 +18,11 @@
   ?>
 </div>
 
-
-<div>
-  <?php include("comment-form.php") ?>
-</div>
+<?php if(isset($_SESSION["email"])) {
+  echo "<div>";
+  include("comment-form.php");
+  echo "</div>";
+} else {
+  echo "Please sign in to leave a comment.";
+}
+?>

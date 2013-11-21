@@ -59,10 +59,10 @@ class Dao {
     "INSERT INTO comment
     (comment_date, user_id, post_id, content)
     VALUES
-    (:omment_date, :user_id, :post_id, :content)";
+    (:comment_date, :user_id, :post_id, :content)";
 
     $q = $conn->prepare($saveQuery);
-    $q->bindParam(":omment_date", $comment_date);
+    $q->bindParam(":comment_date", $comment_date);
     $q->bindParam(":user_id", $user_id);
     $q->bindParam(":post_id", $post_id);
     $q->bindParam(":content", $content);
