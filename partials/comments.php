@@ -16,5 +16,5 @@
 </div>
 
 <div>
-  <?php include("../partials/comment-form.php") ?>
+  <?php require("../partials/comment-form.php") ?>
 </div>
