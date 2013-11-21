@@ -18,5 +18,5 @@
 </div>
 
 <div>
-  <?php include("comment-form.php") ?>
+  <?php include("../partials/comment-form.php") ?>
 </div>
