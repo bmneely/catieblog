@@ -13,6 +13,8 @@
   ads
   as
   <?php
+    require_once "../resources/Dao.php";
+    $dao = new Dao();
 
     echo var_dump($dao);
     echo "string";
