@@ -18,17 +18,6 @@ class Dao {
     return $conn->query("SELECT * FROM user");
   }
 
-  public function validUser($email){
-    $conn = $this->getConnection();
-    $getQuery = "SELECT * FROM user WHERE email = :email";
-    $q = $conn->prepare($getQuery);
-    $q->bindParam(":email", $email);
-    $query->execute(); 
-
-    $rows = $query->fetchColumn(); 
-    return ($rows == 1);
-  }
-
   public function getUser ($email) {
     $conn = $this->getConnection();
     $getQuery = "SELECT * FROM user WHERE email = :email";

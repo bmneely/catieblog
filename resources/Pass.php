@@ -6,7 +6,6 @@
 
     public function is_password_correct($user, $password){
       if ($user["password"] === $password){
-        echo "yar";
         return true;
       } else {
         return false;
