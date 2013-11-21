@@ -1,6 +1,8 @@
 <?php
   require_once "../resources/Dao.php";
   require_once "../resources/Pass.php";
+  require '../vendor/autoload.php';
+  use Mailgun\Mailgun;
 
   $dao = new Dao();
   $pass = new Pass();
@@ -11,11 +13,11 @@
   $_SESSION["sign_up_email_error"] = "";
   $_SESSION["sign_up_password_error"] = "";
 
-	$first = clean_input($_POST['first']);
+  $first = clean_input($_POST['first']);
   $_SESSION["first_name"] = $first;
-	$last = clean_input($_POST['last']);
+  $last = clean_input($_POST['last']);
   $_SESSION["last_name"] = $last;
-	$role = "USER";
+  $role = "USER";
 
 
   if(empty($_POST["email"])) {
@@ -43,9 +45,19 @@
 
     if (is_null($user["email"])) {
       $dao->saveUser($first, $last, $email, $password, $role);
+
+      $mg = new Mailgun("key-0qc796hgz3c1ke5wt4rw58ysavrbk0o9");
+      $domain = "cricketandbea.com";
+
+      $mg->sendMessage($domain, array(
+        'from'    => 'cricketandbea@gmail.com', 
+        'to'      => $email, 
+        'subject' => "Welcome to Cricket and Bea", 
+        'text'    => 'Hello,\n Welcome to my blog. Thank you for your interest I hope you enjoy what you read!\nSincerely\nCatie'));
+
     } else {
       $_SESSION["sign_up_form_errors"] = true;
-      $_SESSION["sign_up_email_error"] = "This email address already exists";
+      $_SESSION["sign_up_email_error"] = "This account already exists";
     }
   }
 
