@@ -6,15 +6,31 @@
     $dao = new Dao();
     $comments = $dao->getComments($post_id);
 
-    echo var_dump($comments);
-    
     foreach ($comments as $comment) {
+      $user = $dao->getUserById($comment["user_id"]);
+
       echo "<div class='comment-content'>";
       echo $comment["content"];
       echo "<div class='comment-user'>";
-      echo $comment["user_id"];
+      echo user_name($user);
       echo "</div></div>";
     }
+
+
+
+    function user_name($user) {
+    $user_name = "";
+    if (is_null($user["first_name"]) || $user["first_name"] === ""){
+      if (is_null($user["last_name"]) || $user["last_name"] === ""){
+        $user_name = $user["email"];
+      } else {
+        $user_name = ucwords($user["last_name"]);
+      }
+    } else {
+      $user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
+    }
+    return $user_name;
+  }
   ?>
 </div>
 
