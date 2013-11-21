@@ -25,8 +25,8 @@
       </span>
     </ul>
   </div>
-  <?php include("session/sign-in-form.php") ?>
-  <?php include("session/sign-up-form.php") ?>
+  <?php include("/session/sign-in-form.php") ?>
+  <?php include("/session/sign-up-form.php") ?>
   <div class="clear"></div>
 </div>
 <div class="clear"></div>
