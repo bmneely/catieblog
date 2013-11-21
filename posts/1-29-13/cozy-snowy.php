@@ -1,4 +1,7 @@
-<?php $page = "blog" ?>
+<?php $page = "blog";
+  $post_id = 3;
+
+ ?>
 <!DOCTYPE html>
 <html>
   <?php include("../../partials/head.php") ?>
@@ -21,6 +24,8 @@
             <img class="post-photos-smallest" src="photos/snowy-04.jpg">
             <p>Laying in bed.  Ben codes while I drink hot tea and knit.  If it's going to be all snowy, snowy days this winter, we might as well take advantage of a cozy bed and the trusty tea kettle.</p>
             <p>My Quill shawl/baby blanket is coming along.  I worked on it all through class today, but ran out of yarn after an hour and a half, so I'm happy to pick it back up again.</p>
+     
+            <?php include("../../partials/comments.php") ?>
           </div>
         </div>
       </div>

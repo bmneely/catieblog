@@ -1,4 +1,6 @@
-<?php $page = "blog" ?>
+<?php $page = "blog";
+  $post_id = 1;
+?>
 <!DOCTYPE html>
 <html>
   <?php include("../../partials/head.php") ?>
@@ -24,6 +26,8 @@
             <p>Last, and also pictured, are a couple of the vintage pot holders I've been working on.  I love the green and beige one, and the mauve and white one has ended up being more coaster-sized because I didn't pay attention to the yarn requirements.  Oh, well.  I love the pattern anyway.</p>
             <p>Outside, the snow is oh-so-hard, just stuck as firm as royal icing to the ground, but not nearly as pretty as freezing sleet and rain have turned the sides of the roads just black as grime and so, so dirty.  I am more than ready for these dreary, cold days to end so I can take a deep breath and stop wearing so many sweaters.</p>
             <p>That's all.  I'm going to go back to my Quill and to my marathon of the first season of The Beekman Boys, because that show is just adorable and so funny.  It makes me feel a bit like it might be spring soon.  I'm waiting and thinking about Easter!</p>
+
+            <?php include("../../partials/comments.php") ?>
           </div>
         </div>
       </div>

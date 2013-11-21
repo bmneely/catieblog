@@ -1,4 +1,6 @@
-<?php $page = "blog" ?>
+<?php $page = "blog";
+  $post_id = 0;
+?>
 <!DOCTYPE html>
 <html>
   <?php include("../../partials/head.php") ?>
@@ -30,6 +32,8 @@
             <p>The ball is an Amish puzzle ball and I made the pattern myself, which was pretty easy to do with a compass and some basic folding.  The pants are from this pattern, which was so easy and fun to make.  I want to make even more and have enough of the lightweight denim I used to make a few more pairs, I think.</p>
             <p>The rattle is from this etsy shop and is just darling, personalized with the baby's name.  Plus, added bonus, I got to get it in colors that matched the quilt!  It really shouldn't have thrilled me as much as it did, since I'm pretty sure it's terribly unhealthy to raise a baby with everything all matchy-match, but it was just too good, so I couldn't pass it up. I'm pretty sure every baby needs a rattle with their name on it, right?  I told myself they did when I saw the price, and it was worth every penny! ;)</p>
             <p>The weekend is already over and I so don't want to go back to work (I never do), but the mornings have been so much cooler lately, and it's even not-hot when I get off in the evening, so I'm telling myself it will be cozy there.  We'll see.</p>
+          
+            <?php include("../../partials/comments.php") ?>
           </div>
         </div>
       </div>

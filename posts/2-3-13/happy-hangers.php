@@ -1,4 +1,6 @@
-<?php $page = "blog" ?>
+<?php $page = "blog";
+  $post_id = 4;
+?>
 <!DOCTYPE html>
 <html>
   <?php include("../../partials/head.php") ?>
@@ -23,6 +25,8 @@
             <p>Actually, it came last week... but I've been so busy playing with it and taking pictures CONSTANTLY that I haven't had a chance to do anything else at all.  Except for going to the antique store yesterday to pick up that yummy little teapot in the first picture.</p>
             <p>Current obsessions include: crocheted hangers, my new camera, teapots.  I picked up three teapots yesterday.  Ridiculous, yes, but also perfect, especially for tea since I have a couple of other really darling ones, but they're cracked badly enough that they won't hold water.  I know this because I tried and got scalding hot water all over me! :)  This tragic event definitely called for more and various teapottage (in better working shape), which was quickly and easily acquired at the antique mall where everyone is exceedingly grouchy and cautious of those of us who are not over 50.  It may or may not have had to do with the lavender-purple hair I'm rocking at the moment, but every single old lady on the planet used to have Mrs. Stewart's bluing-dyed hair, so what's wrong with mine?  And maybe that's just an easy out for them, to say it was my hair....  because MAYBE they're just grouchy in general.  Oh, well, they were incredibly wary of me indeed, and I'm not entirely inclined to return...  except to buy teapots.  They had so many and I loved them all, but the apples and pears were so perfect, and the "personal" size so adorable...  pictures of the others later, perhaps.</p>
             <p>For now, who wants hangers??</p>
+          
+            <?php include("../../partials/comments.php") ?>
           </div>
         </div>
       </div>
