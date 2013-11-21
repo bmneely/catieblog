@@ -10,7 +10,7 @@
   $post_id = $_POST["post_id"];
     echo $content;
     echo $post_id;
-    // echo $user_id
+    echo $user_id
     echo "!!!!!!!!!!!!";
 
   // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
