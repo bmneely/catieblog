@@ -2,19 +2,19 @@
   <h2>Comments</h2>
 
 
+  I am right here!
 
-  afsd
-  sadafdsfads
-
-  sdf
-  fads
-  af
-  afd
-  ads
-  as
   <?php
+    echo "test1";
+
     require_once "../resources/Dao.php";
+    
+    echo "test2";
+
     $dao = new Dao();
+
+    echo "test3";
+
 
     echo var_dump($dao);
     echo "string";
