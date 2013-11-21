@@ -10,7 +10,7 @@
   $user_id = $user["id"];
     // echo $user_id;
   $content = clean_input($_POST["content"]);
-    // echo $content;
+    echo $content;
 
   // $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
