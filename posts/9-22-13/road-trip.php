@@ -1,5 +1,5 @@
 <?php $page = "blog";
-  $post_id = 0;
+  $post_id = 5;
 ?>
 <!DOCTYPE html>
 <html>
