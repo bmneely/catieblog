@@ -10,7 +10,7 @@
       $user = $dao->getUserById($comment["user_id"]);
 
       echo "<div class='comment-content'>";
-      echo $comment["content"];
+      echo htmlspecialchars($comment["content"], ENT_QUOTES, 'UTF-8');;
       echo "<div class='comment-user'>";
       echo user_name($user);
       echo "</div></div>";
