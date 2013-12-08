@@ -13,13 +13,14 @@
   $(document).ready(function(){
       $(".delete_comment").click(function(){
           var id = $(this).attr("value");
+          var jqTarget = "#comment-" + id;
 
           $.ajax({
               type: "POST",
               url: "../../resources/delete_comment.php",
               data: {id: id},
               success: function(data){
-                  alert("Post deleted");
+                $(jqTarget).remove()
               }
           });
       });
