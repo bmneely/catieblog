@@ -16,7 +16,7 @@
 
           $.ajax({
               type: "POST",
-              url: "../resources/delete_comment.php",
+              url: "../../resources/delete_comment.php",
               data: {id: id},
               success: function(data){
                   alert("Post deleted");
