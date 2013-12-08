@@ -11,9 +11,8 @@
 
       echo "<div class='comment-content'>";
       if ($user["email"] == $_SESSION["email"]){
-        echo "<span class=float-right><i class='fa fa-trash-o'></i><span>";
+        echo "<i class='fa fa-trash-o'></i>";
       }
-      echo "<div class='clear'></div>";
       echo htmlspecialchars($comment["content"]);;
       echo "<div class='comment-user'>";
       echo htmlspecialchars(user_name($user));
