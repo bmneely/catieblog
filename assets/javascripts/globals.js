@@ -20,12 +20,29 @@
               url: "../../resources/delete_comment.php",
               data: {id: id},
               success: function(data){
-                $(jqTarget).remove()
+                $(jqTarget).remove();
               }
           });
       });
   });
 
+
+  $(document).ready(function(){
+    $("#comment-form").submit(function(e)
+          var postData = $(this).serializeArray();
+          var formURL = $(this).attr("action");
+          $.ajax({
+              type: "POST",
+              url: "/partials/new-comment.php",
+              data: postData,
+              success:function(data, textStatus, jqXHR) 
+                alert("ALERT ALERT IT IS THE DOCTOR!!!!");
+              }
+          });
+          e.preventDefault(); //STOP default action
+      });
+    $("#comment-form").submit(); //Submit  the FORM
+  });
 
   // $(function () {
   //   $('form').on('submit', function (e) {
