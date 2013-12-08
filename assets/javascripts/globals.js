@@ -28,7 +28,7 @@
 
 
   $(document).ready(function(){
-    $("#comment-form").submit(function(e)
+    $("#comment-form").submit(function(e){
       var postData = $(this).serializeArray();
       var formURL = $(this).attr("action");
           $.ajax({
