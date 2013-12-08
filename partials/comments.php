@@ -10,10 +10,10 @@
       $user = $dao->getUserById($comment["user_id"]);
 
       echo "<div class='comment-content'>";
+      echo htmlspecialchars($comment["content"]);;
       if ($user["email"] == $_SESSION["email"]){
         echo "<i class='fa fa-trash-o'></i>";
       }
-      echo htmlspecialchars($comment["content"]);;
       echo "<div class='comment-user'>";
       echo htmlspecialchars(user_name($user));
       echo "</div></div>";
