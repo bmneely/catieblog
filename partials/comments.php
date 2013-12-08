@@ -15,7 +15,7 @@
       echo htmlspecialchars(user_name($user));
       echo "</div></div>";
       if ($user["email"] == $_SESSION["email"]){
-        echo "<i class='fa fa-trash-o'></i>"
+        echo "<i class='fa fa-trash-o'></i>";
       }
     }
 
