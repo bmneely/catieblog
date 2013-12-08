@@ -29,8 +29,8 @@
 
   $(document).ready(function(){
     $("#comment-form").submit(function(e)
-          var postData = $(this).serializeArray();
-          var formURL = $(this).attr("action");
+      var postData = $(this).serializeArray();
+      var formURL = $(this).attr("action");
           $.ajax({
               type: "POST",
               url: "/partials/new-comment.php",
