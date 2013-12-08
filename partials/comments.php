@@ -9,12 +9,10 @@
     foreach ($comments as $comment) {
       $user = $dao->getUserById($comment["user_id"]);
 
-      echo var_dump($comment);
-      
-      echo "<div class='comment-content' id='comment-" . $comment["id"] . "'>";
+      echo "<div class='comment-content' id='comment-". $comment["id"] ."'>";
       echo htmlspecialchars($comment["content"]);;
       if ($user["email"] == $_SESSION["email"]){
-        echo "<div class='float-right'><i class='fa fa-trash-o'></i></div>";
+        echo "<div class='float-right'><a href='#' class='delete_comment' value='".  "'><i class='fa fa-trash-o'></i></a></div>";
       }
       echo "<div class='comment-user'>";
       echo htmlspecialchars(user_name($user));

@@ -10,6 +10,22 @@
     $(".sign-up").toggle();
   }
 
+  $(document).ready(function(){
+      $(".delete_comment").click(function(){
+          var id = $(this).attr("value");
+
+          $.ajax({
+              type: "POST",
+              url: "../resources/delete_comment.php",
+              data: {id: id},
+              success: function(data){
+                  alert("Post deleted");
+              }
+          });
+      });
+  });
+
+
   // $(function () {
   //   $('form').on('submit', function (e) {
   //     $.ajax({
