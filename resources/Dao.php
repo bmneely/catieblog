@@ -68,13 +68,13 @@ class Dao {
     $q->execute();
   }
 
-  public function deleteComment($comment_id) {
-    $conn = $this->getConnection();
-    $deleteQuery = "DELETE FROM comment WHERE id = :id");
-    $q = $conn->prepare($deleteQuery);
-    $q->bindParam("id", $comment_id);
-    $q->execute();
-  }
+  // public function deleteComment($comment_id) {
+  //   $conn = $this->getConnection();
+  //   $deleteQuery = "DELETE FROM comment WHERE id = :id");
+  //   $q = $conn->prepare($deleteQuery);
+  //   $q->bindParam("id", $comment_id);
+  //   $q->execute();
+  // }
 
   public function getComments ($post_id) {
     $conn = $this->getConnection();
