@@ -35,7 +35,7 @@
               type: "POST",
               url: "/partials/new-comment.php",
               data: postData,
-              success:function(data, textStatus, jqXHR) 
+              success:function(data, textStatus, jqXHR) 
                 alert("ALERT ALERT IT IS THE DOCTOR!!!!");
               }
           });
