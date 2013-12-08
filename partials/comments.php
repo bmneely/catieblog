@@ -12,7 +12,7 @@
       echo "<div class='comment-content' id='comment-". $comment["id"] ."'>";
       echo htmlspecialchars($comment["content"]);;
       if ($user["email"] == $_SESSION["email"]){
-        echo "<div class='float-right'><a href='#' class='delete_comment' value='". $comment["id"] ."'><i class='fa fa-trash-o'></i></a></div>";
+        echo "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='". $comment["id"] ."'><i class='fa fa-trash-o'></i></a></div>";
       }
       echo "<div class='comment-user'>";
       echo htmlspecialchars(user_name($user));
