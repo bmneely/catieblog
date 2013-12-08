@@ -12,7 +12,7 @@
       echo "<div class='comment-content'>";
       echo htmlspecialchars($comment["content"]);;
       if ($user["email"] == $_SESSION["email"]){
-        echo "<i class='fa fa-trash-o'></i>";
+        echo "<div><i class='fa fa-trash-o'></i></div>";
       }
       echo "<div class='comment-user'>";
       echo htmlspecialchars(user_name($user));
