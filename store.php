@@ -1,5 +1,5 @@
 <?php
-  $page = "store"
+  $page = "store";
   session_start();
 ?>
 
