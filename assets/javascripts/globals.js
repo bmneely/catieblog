@@ -42,7 +42,7 @@ $(document).ready(function(){
           + "'>"
           + escapeHtml(postData[0].value)
           + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='"
-          + escapeHtml(postData[0].value)
+          + escapeHtml(postData[1].value)
           + "'><i class='fa fa-trash-o'></i></a></div>"
           + "<div class='comment-user'>"
           + escapeHtml(postData[2].value)
