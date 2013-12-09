@@ -212,7 +212,7 @@ input.submit-commit:hover {
   font-size: 1.1em;
 }
 
-.comments a:visited, a:hover {
+.comments a:visited, a:hover a:before{
     text-decoration: none;
   color:black;
 
