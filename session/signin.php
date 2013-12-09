@@ -46,6 +46,8 @@
     } else if($pass->is_password_correct($user, "$password")){
 			$_SESSION["name"] = user_name($user);
       $_SESSION["email"] = $email;
+      $_SESSION["user_id"] = $user["id"];
+      $_SESSION["user_role"] = $user["role"];
 		} else {
       $_SESSION["form_errors"] = true;
       $_SESSION["password_error"] = "Invalid password";
