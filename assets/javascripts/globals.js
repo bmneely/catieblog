@@ -30,12 +30,14 @@
   $(document).ready(function(){
     $("#comment-form").submit(function(e){
       var postData = $(this).serializeArray();
+      console.log(postData);
       var formURL = $(this).attr("action");
           $.ajax({
               type: "POST",
               url: "/partials/new-comment.php",
               data: postData,
-              success:function(data, textStatus, jqXHR){ 
+              success:function(data, textStatus, jqXHR){
+
                 alert("ALERT ALERT IT IS THE DOCTOR!!!!");
               }
           });
