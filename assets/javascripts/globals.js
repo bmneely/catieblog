@@ -22,7 +22,7 @@
                 $(jqTarget).remove();
               }
           });
-      });
+      };
 
   $(document).ready(function(){
       $(".delete_comment").click(function(){
