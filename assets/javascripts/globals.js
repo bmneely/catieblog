@@ -36,7 +36,7 @@ $(document).ready(function(){
       url: "/partials/new-comment.php",
       data: postData,
       success:function(data, textStatus, jqXHR){
-        $(".comments").append("<div class='comment-content' id='comment-" + encodeURI(postData[1].value) + "'>" + postData[0].value + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='" + postData[0].value + "'><i class='fa fa-trash-o'></i></a></div>" + "<div class='comment-user'>" + postData[2].value + "</div></div>");
+        $(".comments").append("<div class='comment-content' id='comment-" + postData[1].value + "'>" + postData[0].value + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='" + postData[0].value + "'><i class='fa fa-trash-o'></i></a></div>" + "<div class='comment-user'>" + postData[2].value + "</div></div>");
       }
     });
   e.preventDefault();
