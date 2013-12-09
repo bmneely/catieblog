@@ -10,6 +10,20 @@
     $(".sign-up").toggle();
   }
 
+  function deleteComment(){
+   var id = $(this).attr("value");
+          var jqTarget = "#comment-" + id;
+
+          $.ajax({
+              type: "POST",
+              url: "../../resources/delete_comment.php",
+              data: {id: id},
+              success: function(data){
+                $(jqTarget).remove();
+              }
+          });
+      });
+
   $(document).ready(function(){
       $(".delete_comment").click(function(){
           var id = $(this).attr("value");
@@ -38,7 +52,7 @@
           + data
           + "'>"
           + escapeHtml(postData[0].value)
-          + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='"
+          + "<div class='float-right'><a href='javascript:deleteComment()' class='delete_comment' value='"
           + data
           + "'><i class='fa fa-trash-o'></i></a></div>"
           + "<div class='comment-user'>"
