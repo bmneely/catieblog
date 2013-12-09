@@ -216,7 +216,14 @@ input.submit-commit:hover {
   color:black;
 
 }
-/*
-textarea#styled {
-  background-color: blue;
-}*/
+
+.shopping-cart {
+  position: absolute;
+  margin: -15px 15px;
+  right: 0;
+  display: none;
+  width: 170px;
+  border: dotted 1px #778899;
+  border-radius: 7px;
+  background-color: white;
+}

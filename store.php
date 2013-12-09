@@ -6,6 +6,7 @@
   <link href="/assets/stylesheets/store-styles.css" rel="stylesheet" type="text/css">
 <body>
   <div id="container">
+    <?php include("../store/shopping_cart.php") ?>
 
     <?php include("partials/banner.php") ?>
 
