@@ -39,11 +39,11 @@ $(document).ready(function(){
         console.log(data);
         $("#comment-text-area").val('');
         $(".comments").append("<div class='comment-content' id='comment-"
-          + postData[1].value
+          + data
           + "'>"
           + escapeHtml(postData[0].value)
           + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='"
-          + escapeHtml(postData[1].value)
+          + data
           + "'><i class='fa fa-trash-o'></i></a></div>"
           + "<div class='comment-user'>"
           + escapeHtml(postData[2].value)
