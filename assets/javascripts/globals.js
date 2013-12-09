@@ -36,6 +36,7 @@ $(document).ready(function(){
       url: "/partials/new-comment.php",
       data: postData,
       success:function(data, textStatus, jqXHR){
+        console.log(data);
         $("#comment-text-area").val('');
         $(".comments").append("<div class='comment-content' id='comment-"
           + postData[1].value

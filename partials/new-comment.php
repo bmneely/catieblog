@@ -17,6 +17,7 @@
     $data = htmlspecialchars($data);
     return $data;
   }
+  echo $dao->lastInsertedID();
 ?>
 
 <!doctype html>

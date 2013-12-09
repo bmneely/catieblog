@@ -9,8 +9,7 @@ class Dao {
 
   public function getConnection () {
     return
-      new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
-          $this->pass);
+      new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user, $this->pass);
   }
 
   public function getUsers () {
@@ -83,5 +82,10 @@ class Dao {
     $q->bindParam(":post_id", $post_id);
     $q->execute();
     return $q->fetchAll();
+  }
+
+  public function lastInsertedID(){
+    $conn = $this->getConnection();
+    return $conn->lastInsertedID();
   }
 }
