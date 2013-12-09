@@ -14,7 +14,7 @@
 
       echo "<div class='comment-content' id='comment-". $comment["id"] ."'>";
       echo htmlspecialchars($comment["content"]);;
-      if ($user["email"] == $_SESSION["email"]){
+      if ($comment["user_id"] == $_SESSION["user_id"] || $_SESSION["user_role"] = "ADMIN"){
         echo "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='". $comment["id"] ."'><i class='fa fa-trash-o'></i></a></div>";
       }
       echo "<div class='comment-user'>";
