@@ -37,7 +37,8 @@
               url: "/partials/new-comment.php",
               data: postData,
               success:function(data, textStatus, jqXHR){
-
+                console.log(postData[0].value);
+                $(".comments").append("<div class='comment-content' id='comment-" + postData[1].value + "'>");
                 alert("ALERT ALERT IT IS THE DOCTOR!!!!");
               }
           });
