@@ -212,8 +212,7 @@ input.submit-commit:hover {
   font-size: 1.1em;
 }
 
-a.delete-comment {
-    text-decoration: none;
+.fa {
   color:black;
 
 }
