@@ -212,8 +212,10 @@ input.submit-commit:hover {
   font-size: 1.1em;
 }
 
-.delete-comment {
+a.delete-comment {
+    text-decoration: none;
   color:black;
+
 }
 /*
 textarea#styled {
