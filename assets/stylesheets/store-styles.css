@@ -41,9 +41,8 @@
 }
 
 .shopping-cart-container {
-  position: absolute;
+  float:right;
   margin: -15px 15px;
-  right: 0;
   width: 250px;
   border: dotted 1px #778899;
   border-radius: 7px;
