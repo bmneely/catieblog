@@ -1,4 +1,7 @@
-<?php $page = "store" ?>
+<?php
+  $page = "store"
+  session_start();
+?>
 
 <!DOCTYPE html>
 <html>
