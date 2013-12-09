@@ -27,30 +27,31 @@
   });
 
 
-  $(document).ready(function(){
-    $("#comment-form").submit(function(e){
-      var postData = $(this).serializeArray();
-      var formURL = $(this).attr("action");
-          $.ajax({
-              type: "POST",
-              url: "/partials/new-comment.php",
-              data: postData,
-              success:function(data, textStatus, jqXHR){
-                $(".comments").append("<div class='comment-content' id='comment-"
-                  + escapeHtml(postData[1].value)
-                  + "'>"
-                  + escapeHtml(postData[0].value)
-                  + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='"
-                  + escapeHtml(postData[0].value)
-                  + "'><i class='fa fa-trash-o'></i></a></div>"
-                  + "<div class='comment-user'>"
-                  + escapeHtml(postData[2].value)
-                  + "</div></div>");
-              }
-          });
-          e.preventDefault(); //STOP default action
-      });
+$(document).ready(function(){
+  $("#comment-form").submit(function(e){
+    var postData = $(this).serializeArray();
+    var formURL = $(this).attr("action");
+    $.ajax({
+      type: "POST",
+      url: "/partials/new-comment.php",
+      data: postData,
+      success:function(data, textStatus, jqXHR){
+        $(".comments").append("<div class='comment-content' id='comment-"
+          + postData[1].value
+          + "'>"
+          + escapeHtml(postData[0].value)
+          + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='"
+          + escapeHtml(postData[0].value)
+          + "'><i class='fa fa-trash-o'></i></a></div>"
+          + "<div class='comment-user'>"
+          + escapeHtml(postData[2].value)
+          + "</div></div>"
+        );
+      }
+    });
+    e.preventDefault();
   });
+});
 
 function escapeHtml(text) {
   return text
