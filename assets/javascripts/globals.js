@@ -10,8 +10,7 @@
     $(".sign-up").toggle();
   }
 
-  function deleteComment(){
-   var id = $(this).attr("value");
+  function deleteComment(id){
           var jqTarget = "#comment-" + id;
 
           $.ajax({
@@ -52,7 +51,7 @@
           + data
           + "'>"
           + escapeHtml(postData[0].value)
-          + "<div class='float-right'><a href='javascript:deleteComment()' class='delete_comment' value='"
+          + "<div class='float-right'><a href='javascript:deleteComment(" +  data + ")' class='delete_comment' value='"
           + data
           + "'><i class='fa fa-trash-o'></i></a></div>"
           + "<div class='comment-user'>"
