@@ -65,7 +65,7 @@ class Dao {
     $q->bindParam(":post_id", $post_id);
     $q->bindParam(":content", $content);
     $q->execute();
-    return $conn->lastInsertedId();
+    return $conn->lastInsertId();
   }
 
   public function deleteComment ($comment_id) {
