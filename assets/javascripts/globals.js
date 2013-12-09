@@ -40,8 +40,8 @@
               }
           });
           e.preventDefault(); //STOP default action
+          $("#comment-form").submit(); //Submit  the FORM
       });
-    $("#comment-form").submit(); //Submit  the FORM
   });
 
   // $(function () {
