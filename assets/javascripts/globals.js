@@ -37,8 +37,12 @@
               url: "/partials/new-comment.php",
               data: postData,
               success:function(data, textStatus, jqXHR){
-                console.log(postData[0].value);
-                $(".comments").append("<div class='comment-content' id='comment-" + postData[1].value + "'>");
+                $(".comments").append("<div class='comment-content' id='comment-" + postData[1].value + "'>"
+                  + HtmlEncode(postData[0].value)
+                  + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='" + postData[0].value + "'><i class='fa fa-trash-o'></i></a></div>"
+                  + "<div class='comment-user'>"
+                  + postData[2].value
+                  + "</div></div>");
                 alert("ALERT ALERT IT IS THE DOCTOR!!!!");
               }
           });

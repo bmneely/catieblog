@@ -2,8 +2,11 @@
   <h2>Comments</h2>
 
   <?php
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";    
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/Dao.php";  
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/resources/User.php";  
+
     $dao = new Dao();
+    $usr = new User();
     $comments = $dao->getComments($post_id);
 
     foreach ($comments as $comment) {
@@ -15,22 +18,8 @@
         echo "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='". $comment["id"] ."'><i class='fa fa-trash-o'></i></a></div>";
       }
       echo "<div class='comment-user'>";
-      echo htmlspecialchars(user_name($user));
+      echo htmlspecialchars($usr->user_name($user));
       echo "</div></div>";
-    }
-
-    function user_name($user) {
-      $user_name = "";
-      if (is_null($user["first_name"]) || $user["first_name"] === ""){
-        if (is_null($user["last_name"]) || $user["last_name"] === ""){
-          $user_name = $user["email"];
-        } else {
-          $user_name = ucwords($user["last_name"]);
-        }
-      } else {
-        $user_name = ucwords($user["first_name"] . " " . $user["last_name"]);
-      }
-      return $user_name;
     }
   ?>
 </div>
