@@ -9,7 +9,7 @@
   $content = clean_input($_POST["content"]);
   $post_id = $_POST["post_id"];
 
-  $dao->saveComment ($comment_date, $user_id, $post_id, $content);
+  $id = $dao->saveComment ($comment_date, $user_id, $post_id, $content);
 
   function clean_input($data) {
     $data = trim($data);
@@ -17,7 +17,7 @@
     $data = htmlspecialchars($data);
     return $data;
   }
-  echo $dao->lastInsertedID();
+  echo $id;
 ?>
 
 <!doctype html>

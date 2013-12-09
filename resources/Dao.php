@@ -65,6 +65,7 @@ class Dao {
     $q->bindParam(":post_id", $post_id);
     $q->bindParam(":content", $content);
     $q->execute();
+    return $conn->lastInsertedID();
   }
 
   public function deleteComment ($comment_id) {
@@ -82,10 +83,5 @@ class Dao {
     $q->bindParam(":post_id", $post_id);
     $q->execute();
     return $q->fetchAll();
-  }
-
-  public function lastInsertedID(){
-    $conn = $this->getConnection();
-    return $conn->lastInsertedID();
   }
 }
