@@ -37,14 +37,14 @@
               data: postData,
               success:function(data, textStatus, jqXHR){
                 $(".comments").append("<div class='comment-content' id='comment-"
-                  + encodeURI(postData[1].value)
+                  + escapeHtml(postData[1].value)
                   + "'>"
-                  + encodeURI(postData[0].value)
+                  + escapeHtml(postData[0].value)
                   + "<div class='float-right'><a href='javascript:void(0)' class='delete_comment' value='"
-                  + encodeURI(postData[0].value)
+                  + escapeHtml(postData[0].value)
                   + "'><i class='fa fa-trash-o'></i></a></div>"
                   + "<div class='comment-user'>"
-                  + encodeURI(postData[2].value)
+                  + escapeHtml(postData[2].value)
                   + "</div></div>");
               }
           });
@@ -52,20 +52,12 @@
       });
   });
 
-  // $(function () {
-  //   $('form').on('submit', function (e) {
-  //     $.ajax({
-  //       type: 'post',
-  //       url: '/session/signin.php',
-  //       data: $('form').serialize(),
-  //       success: function () {
-  //         $("#login-area").empty();
+function escapeHtml(text) {
+  return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+}
 
-  //         user_name = '<?php session_start(); echo $_SESSION["name"]; ?>';
-  //         console.log(user_name);
-  //         $("#login-area").append("<li class='float-right'><a href='#' onclick='toggleSignIn()'><span class='log-in-text'>" + user_name + "</span><i class='fa fa-sign-out'></i></a></li>");
-  //       }
-  //     });
-  //     e.preventDefault();
-  //   });
-  // });
