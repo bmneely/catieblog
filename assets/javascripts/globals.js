@@ -10,33 +10,32 @@
     $(".sign-up").toggle();
   }
 
-  function deleteComment(id){
-          var jqTarget = "#comment-" + id;
+function deleteComment(id){
+  var jqTarget = "#comment-" + id;
+  $.ajax({
+    type: "POST",
+    url: "../../resources/delete_comment.php",
+    data: {id: id},
+    success: function(data){
+      $(jqTarget).remove();
+    }
+  });
+};
 
-          $.ajax({
-              type: "POST",
-              url: "../../resources/delete_comment.php",
-              data: {id: id},
-              success: function(data){
-                $(jqTarget).remove();
-              }
-          });
-      };
+$(document).ready(function(){
+  $(".delete_comment").click(function(){
+    var id = $(this).attr("value");
+    var jqTarget = "#comment-" + id;
 
-  $(document).ready(function(){
-      $(".delete_comment").click(function(){
-          var id = $(this).attr("value");
-          var jqTarget = "#comment-" + id;
-
-          $.ajax({
-              type: "POST",
-              url: "../../resources/delete_comment.php",
-              data: {id: id},
-              success: function(data){
-                $(jqTarget).remove();
-              }
-          });
-      });
+    $.ajax({
+      type: "POST",
+      url: "../../resources/delete_comment.php",
+      data: {id: id},
+      success: function(data){
+        $(jqTarget).remove();
+      }
+    });
+  });
 
   $("#comment-form").submit(function(e){
     var postData = $(this).serializeArray();

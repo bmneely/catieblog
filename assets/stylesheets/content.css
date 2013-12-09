@@ -211,6 +211,12 @@ input.submit-commit:hover {
   text-align: right;
   font-size: 1.1em;
 }
+
+.comments a:visited, a:hover {
+    text-decoration: none;
+  color:black;
+
+}
 /*
 textarea#styled {
   background-color: blue;
